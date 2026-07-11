@@ -1,0 +1,1349 @@
+{
+  "meta": {
+    "genere_le": "2026-07-11T20:10:24.195109+00:00",
+    "couverture": "nationale",
+    "source_ndvi": "Copernicus Sentinel-2 L2A (Process API, mosaïque max-NDVI)",
+    "source_pluie": "Open-Meteo ECMWF IFS + ERA5",
+    "frontieres": "GADM 4.1 niveau 2",
+    "prochaine_maj": "2026-07-21"
+  },
+  "moughataa": {
+    "Sélibaby": {
+      "wilaya": "Guidimaka",
+      "centre": {
+        "lat": 15.2093,
+        "lon": -12.2584
+      },
+      "nb_cellules": 33,
+      "ndvi_moyen": 0.575,
+      "repartition_niveaux": {
+        "excellent": 1.0
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Sélibaby."
+      }
+    },
+    "Maghama": {
+      "wilaya": "Gorgol",
+      "centre": {
+        "lat": 15.5775,
+        "lon": -12.8325
+      },
+      "nb_cellules": 9,
+      "ndvi_moyen": 0.559,
+      "repartition_niveaux": {
+        "excellent": 1.0
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Maghama."
+      }
+    },
+    "Ould Yengé": {
+      "wilaya": "Guidimaka",
+      "centre": {
+        "lat": 15.6887,
+        "lon": -11.8787
+      },
+      "nb_cellules": 17,
+      "ndvi_moyen": 0.554,
+      "repartition_niveaux": {
+        "excellent": 1.0
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Ould Yengé."
+      }
+    },
+    "Kankossa": {
+      "wilaya": "Assaba",
+      "centre": {
+        "lat": 15.8577,
+        "lon": -11.2046
+      },
+      "nb_cellules": 53,
+      "ndvi_moyen": 0.547,
+      "repartition_niveaux": {
+        "bon": 0.04,
+        "excellent": 0.96
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Kankossa."
+      }
+    },
+    "Tintane": {
+      "wilaya": "Hodh el Gharbi",
+      "centre": {
+        "lat": 15.9825,
+        "lon": -10.3176
+      },
+      "nb_cellules": 50,
+      "ndvi_moyen": 0.535,
+      "repartition_niveaux": {
+        "bon": 0.14,
+        "excellent": 0.86
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Tintane."
+      }
+    },
+    "Kobenni": {
+      "wilaya": "Hodh el Gharbi",
+      "centre": {
+        "lat": 15.864,
+        "lon": -9.4527
+      },
+      "nb_cellules": 41,
+      "ndvi_moyen": 0.541,
+      "repartition_niveaux": {
+        "bon": 0.07,
+        "excellent": 0.93
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Kobenni."
+      }
+    },
+    "M'Bout": {
+      "wilaya": "Gorgol",
+      "centre": {
+        "lat": 16.0375,
+        "lon": -12.5225
+      },
+      "nb_cellules": 27,
+      "ndvi_moyen": 0.533,
+      "repartition_niveaux": {
+        "bon": 0.19,
+        "excellent": 0.81
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur M'Bout."
+      }
+    },
+    "Djiguenni": {
+      "wilaya": "Hodh ech Chargui",
+      "centre": {
+        "lat": 15.9179,
+        "lon": -8.7388
+      },
+      "nb_cellules": 23,
+      "ndvi_moyen": 0.545,
+      "repartition_niveaux": {
+        "bon": 0.09,
+        "excellent": 0.91
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 18.0,
+        "premiere_pluie_utile": "2026-07-14",
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -40,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Djiguenni."
+      }
+    },
+    "Timbédra": {
+      "wilaya": "Hodh ech Chargui",
+      "centre": {
+        "lat": 16.1761,
+        "lon": -8.1887
+      },
+      "nb_cellules": 53,
+      "ndvi_moyen": 0.529,
+      "repartition_niveaux": {
+        "bon": 0.25,
+        "excellent": 0.75
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 18.0,
+        "premiere_pluie_utile": "2026-07-14",
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -40,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Timbédra."
+      }
+    },
+    "Amourj": {
+      "wilaya": "Hodh ech Chargui",
+      "centre": {
+        "lat": 15.7832,
+        "lon": -7.0039
+      },
+      "nb_cellules": 42,
+      "ndvi_moyen": 0.547,
+      "repartition_niveaux": {
+        "excellent": 1.0
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 18.0,
+        "premiere_pluie_utile": "2026-07-14",
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -40,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Amourj."
+      }
+    },
+    "Bassikounou": {
+      "wilaya": "Hodh ech Chargui",
+      "centre": {
+        "lat": 16.2063,
+        "lon": -6.0034
+      },
+      "nb_cellules": 76,
+      "ndvi_moyen": 0.527,
+      "repartition_niveaux": {
+        "bon": 0.21,
+        "excellent": 0.79
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 18.0,
+        "premiere_pluie_utile": "2026-07-14",
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -40,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Bassikounou."
+      }
+    },
+    "Kaédi": {
+      "wilaya": "Gorgol",
+      "centre": {
+        "lat": 16.054,
+        "lon": -13.2049
+      },
+      "nb_cellules": 17,
+      "ndvi_moyen": 0.531,
+      "repartition_niveaux": {
+        "bon": 0.12,
+        "excellent": 0.88
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Kaédi."
+      }
+    },
+    "Néma": {
+      "wilaya": "Hodh ech Chargui",
+      "centre": {
+        "lat": 16.4233,
+        "lon": -7.296
+      },
+      "nb_cellules": 49,
+      "ndvi_moyen": 0.517,
+      "repartition_niveaux": {
+        "bon": 0.31,
+        "excellent": 0.69
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 18.0,
+        "premiere_pluie_utile": "2026-07-14",
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -40,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Néma."
+      }
+    },
+    "Keur-Macène": {
+      "wilaya": "Trarza",
+      "centre": {
+        "lat": 16.564,
+        "lon": -16.264
+      },
+      "nb_cellules": 13,
+      "ndvi_moyen": 0.505,
+      "repartition_niveaux": {
+        "bon": 0.31,
+        "excellent": 0.69
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Keur-Macène."
+      }
+    },
+    "Barkéol": {
+      "wilaya": "Assaba",
+      "centre": {
+        "lat": 16.662,
+        "lon": -12.375
+      },
+      "nb_cellules": 30,
+      "ndvi_moyen": 0.498,
+      "repartition_niveaux": {
+        "bon": 0.5,
+        "excellent": 0.5
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Barkéol."
+      }
+    },
+    "M'Bagne": {
+      "wilaya": "Brakna",
+      "centre": {
+        "lat": 16.2863,
+        "lon": -13.7925
+      },
+      "nb_cellules": 4,
+      "ndvi_moyen": 0.55,
+      "repartition_niveaux": {
+        "excellent": 1.0
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur M'Bagne."
+      }
+    },
+    "Monguel": {
+      "wilaya": "Gorgol",
+      "centre": {
+        "lat": 16.4325,
+        "lon": -12.9825
+      },
+      "nb_cellules": 9,
+      "ndvi_moyen": 0.515,
+      "repartition_niveaux": {
+        "bon": 0.11,
+        "excellent": 0.89
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Monguel."
+      }
+    },
+    "Aïoun": {
+      "wilaya": "Hodh el Gharbi",
+      "centre": {
+        "lat": 16.838,
+        "lon": -9.2611
+      },
+      "nb_cellules": 83,
+      "ndvi_moyen": 0.492,
+      "repartition_niveaux": {
+        "bon": 0.59,
+        "excellent": 0.41
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Aïoun."
+      }
+    },
+    "Bababé": {
+      "wilaya": "Brakna",
+      "centre": {
+        "lat": 16.4775,
+        "lon": -13.9725
+      },
+      "nb_cellules": 3,
+      "ndvi_moyen": 0.501,
+      "repartition_niveaux": {
+        "bon": 0.67,
+        "excellent": 0.33
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Bababé."
+      }
+    },
+    "Aleg": {
+      "wilaya": "Brakna",
+      "centre": {
+        "lat": 16.9719,
+        "lon": -13.6575
+      },
+      "nb_cellules": 76,
+      "ndvi_moyen": 0.492,
+      "repartition_niveaux": {
+        "bon": 0.61,
+        "excellent": 0.39
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Aleg."
+      }
+    },
+    "Kiffa": {
+      "wilaya": "Assaba",
+      "centre": {
+        "lat": 16.7567,
+        "lon": -11.3708
+      },
+      "nb_cellules": 49,
+      "ndvi_moyen": 0.505,
+      "repartition_niveaux": {
+        "bon": 0.43,
+        "excellent": 0.57
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Kiffa."
+      }
+    },
+    "Rosso": {
+      "wilaya": "Trarza",
+      "centre": {
+        "lat": 16.6425,
+        "lon": -15.7425
+      },
+      "nb_cellules": 9,
+      "ndvi_moyen": 0.504,
+      "repartition_niveaux": {
+        "bon": 0.56,
+        "excellent": 0.44
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Rosso."
+      }
+    },
+    "Boghé": {
+      "wilaya": "Brakna",
+      "centre": {
+        "lat": 16.6575,
+        "lon": -14.4675
+      },
+      "nb_cellules": 9,
+      "ndvi_moyen": 0.485,
+      "repartition_niveaux": {
+        "bon": 0.78,
+        "excellent": 0.22
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Boghé."
+      }
+    },
+    "Tamchakett": {
+      "wilaya": "Hodh el Gharbi",
+      "centre": {
+        "lat": 17.0904,
+        "lon": -10.4646
+      },
+      "nb_cellules": 63,
+      "ndvi_moyen": 0.491,
+      "repartition_niveaux": {
+        "bon": 0.6,
+        "excellent": 0.4
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Tamchakett."
+      }
+    },
+    "R'Kiz": {
+      "wilaya": "Trarza",
+      "centre": {
+        "lat": 16.9475,
+        "lon": -15.0625
+      },
+      "nb_cellules": 27,
+      "ndvi_moyen": 0.49,
+      "repartition_niveaux": {
+        "bon": 0.56,
+        "excellent": 0.44
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur R'Kiz."
+      }
+    },
+    "Guérou": {
+      "wilaya": "Assaba",
+      "centre": {
+        "lat": 16.8825,
+        "lon": -11.97
+      },
+      "nb_cellules": 12,
+      "ndvi_moyen": 0.483,
+      "repartition_niveaux": {
+        "bon": 0.67,
+        "excellent": 0.33
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Guérou."
+      }
+    },
+    "Méderdra": {
+      "wilaya": "Trarza",
+      "centre": {
+        "lat": 17.2275,
+        "lon": -15.6825
+      },
+      "nb_cellules": 36,
+      "ndvi_moyen": 0.481,
+      "repartition_niveaux": {
+        "bon": 0.64,
+        "excellent": 0.36
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Méderdra."
+      }
+    },
+    "Ouadane": {
+      "wilaya": "Hodh ech Chargui",
+      "centre": {
+        "lat": 18.9961,
+        "lon": -7.0608
+      },
+      "nb_cellules": 628,
+      "ndvi_moyen": 0.393,
+      "repartition_niveaux": {
+        "bon": 0.66,
+        "excellent": 0.06,
+        "faible": 0.01,
+        "moyen": 0.27
+      },
+      "pct_degrade": 0.01,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Ouadane."
+      }
+    },
+    "Boutilimit": {
+      "wilaya": "Trarza",
+      "centre": {
+        "lat": 18.1496,
+        "lon": -14.1078
+      },
+      "nb_cellules": 152,
+      "ndvi_moyen": 0.432,
+      "repartition_niveaux": {
+        "bon": 0.97,
+        "excellent": 0.03
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Boutilimit."
+      }
+    },
+    "Magta-Lahjar": {
+      "wilaya": "Brakna",
+      "centre": {
+        "lat": 17.7191,
+        "lon": -12.9436
+      },
+      "nb_cellules": 66,
+      "ndvi_moyen": 0.452,
+      "repartition_niveaux": {
+        "bon": 0.86,
+        "excellent": 0.14
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Magta-Lahjar."
+      }
+    },
+    "Moudjéria": {
+      "wilaya": "Tagant",
+      "centre": {
+        "lat": 17.8325,
+        "lon": -12.155
+      },
+      "nb_cellules": 54,
+      "ndvi_moyen": 0.449,
+      "repartition_niveaux": {
+        "bon": 0.91,
+        "excellent": 0.09
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Moudjéria."
+      }
+    },
+    "Ouad-Naga": {
+      "wilaya": "Trarza",
+      "centre": {
+        "lat": 18.4244,
+        "lon": -15.4036
+      },
+      "nb_cellules": 91,
+      "ndvi_moyen": 0.416,
+      "repartition_niveaux": {
+        "bon": 1.0
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Ouad-Naga."
+      }
+    },
+    "Boumdeïd": {
+      "wilaya": "Assaba",
+      "centre": {
+        "lat": 17.7443,
+        "lon": -11.2748
+      },
+      "nb_cellules": 20,
+      "ndvi_moyen": 0.448,
+      "repartition_niveaux": {
+        "bon": 1.0
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Boumdeïd."
+      }
+    },
+    "Tichitt": {
+      "wilaya": "Tagant",
+      "centre": {
+        "lat": 18.6816,
+        "lon": -9.738
+      },
+      "nb_cellules": 298,
+      "ndvi_moyen": 0.41,
+      "repartition_niveaux": {
+        "bon": 0.89,
+        "excellent": 0.02,
+        "moyen": 0.09
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Tichitt."
+      }
+    },
+    "Tidjikja": {
+      "wilaya": "Tagant",
+      "centre": {
+        "lat": 18.6334,
+        "lon": -11.5665
+      },
+      "nb_cellules": 88,
+      "ndvi_moyen": 0.407,
+      "repartition_niveaux": {
+        "bon": 0.94,
+        "moyen": 0.06
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Tidjikja."
+      }
+    },
+    "Nouakchott": {
+      "wilaya": "Nouakchott",
+      "centre": {
+        "lat": 18.1425,
+        "lon": -15.885
+      },
+      "nb_cellules": 6,
+      "ndvi_moyen": 0.448,
+      "repartition_niveaux": {
+        "bon": 1.0
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Nouakchott."
+      }
+    },
+    "Aoujeft": {
+      "wilaya": "Adrar",
+      "centre": {
+        "lat": 19.425,
+        "lon": -13.1021
+      },
+      "nb_cellules": 114,
+      "ndvi_moyen": 0.37,
+      "repartition_niveaux": {
+        "bon": 0.7,
+        "moyen": 0.3
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Aoujeft."
+      }
+    },
+    "Akjoujt": {
+      "wilaya": "Inchiri",
+      "centre": {
+        "lat": 20.0268,
+        "lon": -15.1102
+      },
+      "nb_cellules": 213,
+      "ndvi_moyen": 0.345,
+      "repartition_niveaux": {
+        "bon": 0.44,
+        "moyen": 0.56
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Akjoujt."
+      }
+    },
+    "Chinguetti": {
+      "wilaya": "Adrar",
+      "centre": {
+        "lat": 21.2779,
+        "lon": -9.3445
+      },
+      "nb_cellules": 830,
+      "ndvi_moyen": 0.284,
+      "repartition_niveaux": {
+        "bon": 0.14,
+        "faible": 0.1,
+        "moyen": 0.76
+      },
+      "pct_degrade": 0.1,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Chinguetti."
+      }
+    },
+    "Atar": {
+      "wilaya": "Adrar",
+      "centre": {
+        "lat": 20.6787,
+        "lon": -13.4579
+      },
+      "nb_cellules": 117,
+      "ndvi_moyen": 0.311,
+      "repartition_niveaux": {
+        "bon": 0.16,
+        "moyen": 0.84
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Atar."
+      }
+    },
+    "Nouadhibou": {
+      "wilaya": "Dakhlet Nouadhibou",
+      "centre": {
+        "lat": 20.7993,
+        "lon": -16.0281
+      },
+      "nb_cellules": 75,
+      "ndvi_moyen": 0.309,
+      "repartition_niveaux": {
+        "bon": 0.12,
+        "moyen": 0.88
+      },
+      "pct_degrade": 0.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Nouadhibou."
+      }
+    },
+    "F'Dérik": {
+      "wilaya": "Tiris Zemmour",
+      "centre": {
+        "lat": 23.4255,
+        "lon": -10.2272
+      },
+      "nb_cellules": 827,
+      "ndvi_moyen": 0.181,
+      "repartition_niveaux": {
+        "faible": 0.59,
+        "moyen": 0.34,
+        "nu": 0.06
+      },
+      "pct_degrade": 0.66,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 66% de F'Dérik et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+      }
+    },
+    "Zouérate": {
+      "wilaya": "Tiris Zemmour",
+      "centre": {
+        "lat": 22.6425,
+        "lon": -12.3075
+      },
+      "nb_cellules": 3,
+      "ndvi_moyen": 0.199,
+      "repartition_niveaux": {
+        "faible": 0.33,
+        "moyen": 0.67
+      },
+      "pct_degrade": 0.33,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "orange",
+        "couleur": "#C4870A",
+        "titre_fr": "Saison plus sèche",
+        "message_fr": "Pluies quasi nulles sur Zouérate par rapport à la normale. Anticiper une pression sur les ressources."
+      }
+    },
+    "Bir Moghreïn": {
+      "wilaya": "Tiris Zemmour",
+      "centre": {
+        "lat": 25.6501,
+        "lon": -8.6367
+      },
+      "nb_cellules": 456,
+      "ndvi_moyen": 0.082,
+      "repartition_niveaux": {
+        "faible": 0.34,
+        "nu": 0.66
+      },
+      "pct_degrade": 1.0,
+      "pluie": {
+        "cumul_16j_mm": 0.0,
+        "premiere_pluie_utile": null,
+        "detail": []
+      },
+      "tendance": {
+        "tendance": "plus sec",
+        "ecart_pct": -100,
+        "normale_mm": 30.0
+      },
+      "alerte": {
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 100% de Bir Moghreïn et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+      }
+    }
+  },
+  "alertes_actives": [
+    {
+      "moughataa": "F'Dérik",
+      "wilaya": "Tiris Zemmour",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 66% de F'Dérik et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "Bir Moghreïn",
+      "wilaya": "Tiris Zemmour",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 100% de Bir Moghreïn et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "Zouérate",
+      "wilaya": "Tiris Zemmour",
+      "niveau": "orange",
+      "message": "Pluies quasi nulles sur Zouérate par rapport à la normale. Anticiper une pression sur les ressources."
+    }
+  ]
+}
