@@ -1,11 +1,11 @@
 {
   "meta": {
-    "genere_le": "2026-07-11T21:30:05.061039+00:00",
+    "genere_le": "2026-07-12T00:18:51.751048+00:00",
     "couverture": "nationale",
     "source_ndvi": "Copernicus Sentinel-2 L2A (Process API, mosaïque max-NDVI)",
     "source_pluie": "Open-Meteo ECMWF IFS + ERA5",
     "frontieres": "GADM 4.1 niveau 2",
-    "prochaine_maj": "2026-07-21"
+    "prochaine_maj": "2026-07-22"
   },
   "moughataa": {
     "Sélibaby": {
@@ -15,44 +15,40 @@
         "lon": -12.2584
       },
       "nb_cellules": 33,
-      "ndvi_moyen": 0.135,
+      "ndvi_moyen": 0.132,
       "repartition_niveaux": {
-        "faible": 0.79,
+        "faible": 0.76,
         "inconnu": 0.12,
-        "nu": 0.09
+        "nu": 0.12
       },
       "pct_degrade": 0.88,
       "pluie": {
-        "cumul_16j_mm": 18.9,
+        "cumul_16j_mm": 15.1,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.5
           },
           {
             "date": "2026-07-13",
-            "mm": 1.8
+            "mm": 0.1
           },
           {
             "date": "2026-07-14",
-            "mm": 2.9
+            "mm": 0.0
           },
           {
             "date": "2026-07-15",
-            "mm": 0.0
+            "mm": 0.1
           },
           {
             "date": "2026-07-16",
-            "mm": 0.0
+            "mm": 0.3
           },
           {
             "date": "2026-07-17",
-            "mm": 1.3
+            "mm": 1.9
           },
           {
             "date": "2026-07-18",
@@ -88,20 +84,24 @@
           },
           {
             "date": "2026-07-26",
-            "mm": 3.15
+            "mm": 3.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -84,
-        "normale_mm": 120.8
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Saison plus sèche",
-        "message_fr": "Pluies sur Sélibaby inférieures de 84% à la normale. Anticiper une pression sur les ressources."
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Sélibaby."
       }
     },
     "Maghama": {
@@ -111,92 +111,27 @@
         "lon": -12.8325
       },
       "nb_cellules": 9,
-      "ndvi_moyen": 0.118,
+      "ndvi_moyen": 0.113,
       "repartition_niveaux": {
         "faible": 0.78,
         "nu": 0.22
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 10.9,
-        "premiere_pluie_utile": "2026-07-13",
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.2
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 5.7
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.8
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 1.1
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 1.1
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 1.5
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.3
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "cumul_16j_mm": 0,
+        "premiere_pluie_utile": null,
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -87,
-        "normale_mm": 86.9
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-13 sur Maghama (10.9 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 100% de Maghama et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Ould Yengé": {
@@ -206,92 +141,26 @@
         "lon": -11.8787
       },
       "nb_cellules": 17,
-      "ndvi_moyen": 0.146,
+      "ndvi_moyen": 0.144,
       "repartition_niveaux": {
-        "faible": 0.94,
-        "moyen": 0.06
+        "faible": 1.0
       },
-      "pct_degrade": 0.94,
+      "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 13.2,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 1.1
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 2.1
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 4.6
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 1.2
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.5
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 1.3
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 1.8
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -87,
-        "normale_mm": 100.0
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Saison plus sèche",
-        "message_fr": "Pluies sur Ould Yengé inférieures de 87% à la normale. Anticiper une pression sur les ressources."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 100% de Ould Yengé et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Kankossa": {
@@ -301,93 +170,29 @@
         "lon": -11.2046
       },
       "nb_cellules": 53,
-      "ndvi_moyen": 0.14,
+      "ndvi_moyen": 0.137,
       "repartition_niveaux": {
-        "faible": 0.94,
-        "moyen": 0.04,
+        "faible": 0.92,
+        "inconnu": 0.04,
+        "moyen": 0.02,
         "nu": 0.02
       },
-      "pct_degrade": 0.96,
+      "pct_degrade": 0.94,
       "pluie": {
-        "cumul_16j_mm": 27.0,
-        "premiere_pluie_utile": "2026-07-17",
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.2
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 4.3
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 1.7
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 2.2
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 1.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 6.2
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 8.4
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 2.4
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.6
-          }
-        ]
+        "cumul_16j_mm": 0,
+        "premiere_pluie_utile": null,
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -69,
-        "normale_mm": 88.0
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-17 sur Kankossa (27.0 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 94% de Kankossa et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Tintane": {
@@ -399,42 +204,39 @@
       "nb_cellules": 50,
       "ndvi_moyen": 0.153,
       "repartition_niveaux": {
+        "bon": 0.02,
         "faible": 0.88,
-        "moyen": 0.1,
+        "moyen": 0.08,
         "nu": 0.02
       },
       "pct_degrade": 0.9,
       "pluie": {
-        "cumul_16j_mm": 31.9,
-        "premiere_pluie_utile": "2026-07-12",
+        "cumul_16j_mm": 31.6,
+        "premiere_pluie_utile": "2026-07-16",
         "detail": [
           {
-            "date": "2026-07-11",
-            "mm": 0.3
-          },
-          {
             "date": "2026-07-12",
-            "mm": 5.5
+            "mm": 0.4
           },
           {
             "date": "2026-07-13",
-            "mm": 0.6
+            "mm": 0.4
           },
           {
             "date": "2026-07-14",
-            "mm": 5.4
+            "mm": 1.7
           },
           {
             "date": "2026-07-15",
-            "mm": 0.0
+            "mm": 0.3
           },
           {
             "date": "2026-07-16",
-            "mm": 2.4
+            "mm": 16.2
           },
           {
             "date": "2026-07-17",
-            "mm": 5.6
+            "mm": 0.5
           },
           {
             "date": "2026-07-18",
@@ -471,19 +273,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
         "ecart_pct": -65,
-        "normale_mm": 91.5
+        "normale_mm": 89.7
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-12 sur Tintane (31.9 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-16 sur Tintane (31.6 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Kobenni": {
@@ -501,36 +307,32 @@
       },
       "pct_degrade": 0.8,
       "pluie": {
-        "cumul_16j_mm": 53.4,
-        "premiere_pluie_utile": "2026-07-14",
+        "cumul_16j_mm": 62.5,
+        "premiere_pluie_utile": "2026-07-16",
         "detail": [
           {
-            "date": "2026-07-11",
-            "mm": 1.4
-          },
-          {
             "date": "2026-07-12",
-            "mm": 1.9
+            "mm": 0.4
           },
           {
             "date": "2026-07-13",
-            "mm": 0.1
+            "mm": 0.0
           },
           {
             "date": "2026-07-14",
-            "mm": 6.5
+            "mm": 1.8
           },
           {
             "date": "2026-07-15",
-            "mm": 2.1
+            "mm": 0.0
           },
           {
             "date": "2026-07-16",
-            "mm": 8.3
+            "mm": 29.4
           },
           {
             "date": "2026-07-17",
-            "mm": 2.5
+            "mm": 0.0
           },
           {
             "date": "2026-07-18",
@@ -566,20 +368,24 @@
           },
           {
             "date": "2026-07-26",
-            "mm": 1.2
+            "mm": 1.5
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -30,
-        "normale_mm": 75.9
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-14 sur Kobenni (53.4 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-16 sur Kobenni (62.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "M'Bout": {
@@ -589,32 +395,29 @@
         "lon": -12.5225
       },
       "nb_cellules": 27,
-      "ndvi_moyen": 0.113,
+      "ndvi_moyen": 0.11,
       "repartition_niveaux": {
-        "faible": 0.63,
+        "faible": 0.56,
+        "inconnu": 0.04,
         "moyen": 0.04,
-        "nu": 0.33
+        "nu": 0.37
       },
-      "pct_degrade": 0.96,
+      "pct_degrade": 0.93,
       "pluie": {
-        "cumul_16j_mm": 11.1,
+        "cumul_16j_mm": 11.4,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
           },
           {
             "date": "2026-07-13",
-            "mm": 1.0
+            "mm": 0.0
           },
           {
             "date": "2026-07-14",
-            "mm": 2.6
+            "mm": 2.2
           },
           {
             "date": "2026-07-15",
@@ -626,7 +429,7 @@
           },
           {
             "date": "2026-07-17",
-            "mm": 0.3
+            "mm": 1.8
           },
           {
             "date": "2026-07-18",
@@ -662,20 +465,24 @@
           },
           {
             "date": "2026-07-26",
-            "mm": 0.0
+            "mm": 0.2
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -83,
-        "normale_mm": 63.8
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Saison plus sèche",
-        "message_fr": "Pluies sur M'Bout inférieures de 83% à la normale. Anticiper une pression sur les ressources."
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur M'Bout."
       }
     },
     "Djiguenni": {
@@ -692,32 +499,28 @@
       },
       "pct_degrade": 0.91,
       "pluie": {
-        "cumul_16j_mm": 47.6,
-        "premiere_pluie_utile": "2026-07-18",
+        "cumul_16j_mm": 71.5,
+        "premiere_pluie_utile": "2026-07-16",
         "detail": [
           {
-            "date": "2026-07-11",
-            "mm": 1.2
-          },
-          {
             "date": "2026-07-12",
-            "mm": 3.5
+            "mm": 3.0
           },
           {
             "date": "2026-07-13",
-            "mm": 0.5
+            "mm": 0.0
           },
           {
             "date": "2026-07-14",
-            "mm": 1.9
+            "mm": 0.1
           },
           {
             "date": "2026-07-15",
-            "mm": 0.6
+            "mm": 0.9
           },
           {
             "date": "2026-07-16",
-            "mm": 0.9
+            "mm": 28.5
           },
           {
             "date": "2026-07-17",
@@ -758,19 +561,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -26,
-        "normale_mm": 64.1
+        "tendance": "normal",
+        "ecart_pct": 17,
+        "normale_mm": 61.1
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-18 sur Djiguenni (47.6 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-16 sur Djiguenni (71.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Timbédra": {
@@ -789,32 +596,28 @@
       },
       "pct_degrade": 0.94,
       "pluie": {
-        "cumul_16j_mm": 36.7,
-        "premiere_pluie_utile": "2026-07-18",
+        "cumul_16j_mm": 54.0,
+        "premiere_pluie_utile": "2026-07-16",
         "detail": [
           {
-            "date": "2026-07-11",
-            "mm": 1.7
-          },
-          {
             "date": "2026-07-12",
-            "mm": 0.7
+            "mm": 1.5
           },
           {
             "date": "2026-07-13",
-            "mm": 1.2
+            "mm": 0.6
           },
           {
             "date": "2026-07-14",
-            "mm": 1.0
+            "mm": 0.0
           },
           {
             "date": "2026-07-15",
-            "mm": 0.3
+            "mm": 0.0
           },
           {
             "date": "2026-07-16",
-            "mm": 0.0
+            "mm": 20.1
           },
           {
             "date": "2026-07-17",
@@ -855,19 +658,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -49,
-        "normale_mm": 72.5
+        "ecart_pct": -25,
+        "normale_mm": 72.0
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-18 sur Timbédra (36.7 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-16 sur Timbédra (54.0 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Amourj": {
@@ -884,13 +691,9 @@
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 16.0,
+        "cumul_16j_mm": 14.6,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 1.8
-          },
           {
             "date": "2026-07-12",
             "mm": 0.1
@@ -949,20 +752,24 @@
           },
           {
             "date": "2026-07-26",
-            "mm": 0.0
+            "mm": 0.4
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -81,
-        "normale_mm": 83.3
+        "ecart_pct": -82,
+        "normale_mm": 83.2
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Saison plus sèche",
-        "message_fr": "Pluies sur Amourj inférieures de 81% à la normale. Anticiper une pression sur les ressources."
+        "message_fr": "Pluies sur Amourj inférieures de 82% à la normale. Anticiper une pression sur les ressources."
       }
     },
     "Bassikounou": {
@@ -980,36 +787,32 @@
       },
       "pct_degrade": 0.99,
       "pluie": {
-        "cumul_16j_mm": 28.6,
-        "premiere_pluie_utile": "2026-07-11",
+        "cumul_16j_mm": 22.4,
+        "premiere_pluie_utile": "2026-07-15",
         "detail": [
           {
-            "date": "2026-07-11",
-            "mm": 11.7
-          },
-          {
             "date": "2026-07-12",
-            "mm": 0.0
+            "mm": 0.3
           },
           {
             "date": "2026-07-13",
-            "mm": 0.7
+            "mm": 0.3
           },
           {
             "date": "2026-07-14",
-            "mm": 0.0
+            "mm": 0.2
           },
           {
             "date": "2026-07-15",
-            "mm": 6.3
+            "mm": 8.1
           },
           {
             "date": "2026-07-16",
-            "mm": 1.5
+            "mm": 5.7
           },
           {
             "date": "2026-07-17",
-            "mm": 1.1
+            "mm": 0.5
           },
           {
             "date": "2026-07-18",
@@ -1046,19 +849,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -52,
+        "ecart_pct": -63,
         "normale_mm": 59.9
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-11 sur Bassikounou (28.6 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-15 sur Bassikounou (22.4 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Kaédi": {
@@ -1068,92 +875,27 @@
         "lon": -13.2049
       },
       "nb_cellules": 17,
-      "ndvi_moyen": 0.107,
+      "ndvi_moyen": 0.105,
       "repartition_niveaux": {
-        "faible": 0.59,
-        "nu": 0.41
+        "faible": 0.47,
+        "nu": 0.53
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 16.4,
-        "premiere_pluie_utile": "2026-07-17",
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.5
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 2.6
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 1.6
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.3
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 6.0
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.5
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 3.0
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 1.2
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "cumul_16j_mm": 0,
+        "premiere_pluie_utile": null,
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -74,
-        "normale_mm": 63.6
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-17 sur Kaédi (16.4 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 100% de Kaédi et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Néma": {
@@ -1170,32 +912,28 @@
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 29.1,
-        "premiere_pluie_utile": "2026-07-15",
+        "cumul_16j_mm": 23.8,
+        "premiere_pluie_utile": "2026-07-16",
         "detail": [
           {
-            "date": "2026-07-11",
-            "mm": 2.6
-          },
-          {
             "date": "2026-07-12",
-            "mm": 0.0
+            "mm": 0.1
           },
           {
             "date": "2026-07-13",
-            "mm": 1.7
+            "mm": 0.1
           },
           {
             "date": "2026-07-14",
-            "mm": 1.2
+            "mm": 0.0
           },
           {
             "date": "2026-07-15",
-            "mm": 12.6
+            "mm": 2.0
           },
           {
             "date": "2026-07-16",
-            "mm": 0.3
+            "mm": 10.9
           },
           {
             "date": "2026-07-17",
@@ -1236,19 +974,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.45
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -46,
-        "normale_mm": 53.9
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-15 sur Néma (29.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-16 sur Néma (23.8 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Keur-Macène": {
@@ -1267,79 +1009,14 @@
       },
       "pct_degrade": 0.69,
       "pluie": {
-        "cumul_16j_mm": 4.1,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.3
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.8
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 2.4
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -81,
-        "normale_mm": 22.0
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "rouge",
@@ -1355,7 +1032,7 @@
         "lon": -12.375
       },
       "nb_cellules": 30,
-      "ndvi_moyen": 0.099,
+      "ndvi_moyen": 0.097,
       "repartition_niveaux": {
         "faible": 0.57,
         "inconnu": 0.03,
@@ -1363,85 +1040,20 @@
       },
       "pct_degrade": 0.97,
       "pluie": {
-        "cumul_16j_mm": 43.9,
-        "premiere_pluie_utile": "2026-07-14",
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.4
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 16.2
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 7.5
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 9.6
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 9.0
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "cumul_16j_mm": 0,
+        "premiere_pluie_utile": null,
+        "detail": []
       },
       "tendance": {
-        "tendance": "normal",
-        "ecart_pct": 3,
-        "normale_mm": 42.7
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-14 sur Barkéol (43.9 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 97% de Barkéol et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "M'Bagne": {
@@ -1451,92 +1063,27 @@
         "lon": -13.7925
       },
       "nb_cellules": 4,
-      "ndvi_moyen": 0.104,
+      "ndvi_moyen": 0.094,
       "repartition_niveaux": {
         "faible": 0.25,
         "nu": 0.75
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 12.3,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.3
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 1.5
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.9
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 1.7
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 3.5
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 3.1
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -83,
-        "normale_mm": 73.9
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Saison plus sèche",
-        "message_fr": "Pluies sur M'Bagne inférieures de 83% à la normale. Anticiper une pression sur les ressources."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 100% de M'Bagne et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Monguel": {
@@ -1553,13 +1100,9 @@
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 17.0,
-        "premiere_pluie_utile": "2026-07-17",
+        "cumul_16j_mm": 14.5,
+        "premiere_pluie_utile": "2026-07-23",
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -1570,11 +1113,11 @@
           },
           {
             "date": "2026-07-14",
-            "mm": 2.0
+            "mm": 1.0
           },
           {
             "date": "2026-07-15",
-            "mm": 0.3
+            "mm": 0.0
           },
           {
             "date": "2026-07-16",
@@ -1582,7 +1125,7 @@
           },
           {
             "date": "2026-07-17",
-            "mm": 5.1
+            "mm": 3.9
           },
           {
             "date": "2026-07-18",
@@ -1619,19 +1162,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -68,
+        "ecart_pct": -73,
         "normale_mm": 53.8
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-17 sur Monguel (17.0 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-23 sur Monguel (14.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Aïoun": {
@@ -1648,85 +1195,20 @@
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 25.0,
-        "premiere_pluie_utile": "2026-07-18",
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.3
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.4
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 1.5
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 1.2
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 12.0
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 3.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 5.4
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 1.2
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "cumul_16j_mm": 0,
+        "premiere_pluie_utile": null,
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -56,
-        "normale_mm": 56.4
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-18 sur Aïoun (25.0 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 100% de Aïoun et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Bababé": {
@@ -1736,20 +1218,16 @@
         "lon": -13.9725
       },
       "nb_cellules": 3,
-      "ndvi_moyen": 0.11,
+      "ndvi_moyen": 0.108,
       "repartition_niveaux": {
         "faible": 0.67,
         "nu": 0.33
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 6.9,
+        "cumul_16j_mm": 8.5,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -1760,11 +1238,11 @@
           },
           {
             "date": "2026-07-14",
-            "mm": 0.6
+            "mm": 0.1
           },
           {
             "date": "2026-07-15",
-            "mm": 0.3
+            "mm": 0.0
           },
           {
             "date": "2026-07-16",
@@ -1772,7 +1250,7 @@
           },
           {
             "date": "2026-07-17",
-            "mm": 0.5
+            "mm": 2.9
           },
           {
             "date": "2026-07-18",
@@ -1809,19 +1287,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -88,
-        "normale_mm": 59.4
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Saison plus sèche",
-        "message_fr": "Pluies sur Bababé inférieures de 88% à la normale. Anticiper une pression sur les ressources."
+        "niveau": "vert",
+        "couleur": "#4A7C45",
+        "titre_fr": "Situation favorable",
+        "message_fr": "Pâturage et pluie corrects sur Bababé."
       }
     },
     "Aleg": {
@@ -1831,7 +1313,7 @@
         "lon": -13.6575
       },
       "nb_cellules": 76,
-      "ndvi_moyen": 0.102,
+      "ndvi_moyen": 0.1,
       "repartition_niveaux": {
         "faible": 0.54,
         "nu": 0.46
@@ -1841,10 +1323,6 @@
         "cumul_16j_mm": 26.4,
         "premiere_pluie_utile": "2026-07-14",
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -1904,6 +1382,10 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
@@ -1926,93 +1408,28 @@
         "lon": -11.3708
       },
       "nb_cellules": 49,
-      "ndvi_moyen": 0.111,
+      "ndvi_moyen": 0.113,
       "repartition_niveaux": {
-        "faible": 0.61,
-        "inconnu": 0.16,
-        "nu": 0.22
+        "faible": 0.59,
+        "inconnu": 0.22,
+        "nu": 0.18
       },
-      "pct_degrade": 0.84,
+      "pct_degrade": 0.78,
       "pluie": {
-        "cumul_16j_mm": 12.1,
-        "premiere_pluie_utile": "2026-07-17",
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.3
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 5.1
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 3.0
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 2.4
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "cumul_16j_mm": 0,
+        "premiere_pluie_utile": null,
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -76,
-        "normale_mm": 49.4
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-17 sur Kiffa (12.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 78% de Kiffa et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Rosso": {
@@ -2030,79 +1447,14 @@
       },
       "pct_degrade": 0.67,
       "pluie": {
-        "cumul_16j_mm": 4.8,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 0.5
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 3.0
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -84,
-        "normale_mm": 30.0
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "rouge",
@@ -2118,7 +1470,7 @@
         "lon": -14.4675
       },
       "nb_cellules": 9,
-      "ndvi_moyen": 0.152,
+      "ndvi_moyen": 0.151,
       "repartition_niveaux": {
         "faible": 0.78,
         "moyen": 0.11,
@@ -2126,85 +1478,20 @@
       },
       "pct_degrade": 0.89,
       "pluie": {
-        "cumul_16j_mm": 12.5,
-        "premiere_pluie_utile": "2026-07-22",
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.5
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 0.5
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 7.5
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 3.3
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "cumul_16j_mm": 0,
+        "premiere_pluie_utile": null,
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -73,
-        "normale_mm": 46.8
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-22 sur Boghé (12.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 89% de Boghé et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Tamchakett": {
@@ -2216,91 +1503,26 @@
       "nb_cellules": 63,
       "ndvi_moyen": 0.1,
       "repartition_niveaux": {
-        "faible": 0.52,
-        "inconnu": 0.03,
+        "faible": 0.51,
+        "inconnu": 0.05,
         "nu": 0.44
       },
-      "pct_degrade": 0.97,
+      "pct_degrade": 0.95,
       "pluie": {
-        "cumul_16j_mm": 12.2,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.5
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 1.4
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.3
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 3.9
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 4.2
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.5
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -64,
-        "normale_mm": 34.0
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Saison plus sèche",
-        "message_fr": "Pluies sur Tamchakett inférieures de 64% à la normale. Anticiper une pression sur les ressources."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 95% de Tamchakett et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "R'Kiz": {
@@ -2310,7 +1532,7 @@
         "lon": -15.0625
       },
       "nb_cellules": 27,
-      "ndvi_moyen": 0.131,
+      "ndvi_moyen": 0.128,
       "repartition_niveaux": {
         "faible": 0.78,
         "moyen": 0.11,
@@ -2318,13 +1540,9 @@
       },
       "pct_degrade": 0.89,
       "pluie": {
-        "cumul_16j_mm": 9.7,
-        "premiere_pluie_utile": "2026-07-14",
+        "cumul_16j_mm": 4.0,
+        "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -2335,11 +1553,11 @@
           },
           {
             "date": "2026-07-14",
-            "mm": 6.6
+            "mm": 0.4
           },
           {
             "date": "2026-07-15",
-            "mm": 0.1
+            "mm": 0.0
           },
           {
             "date": "2026-07-16",
@@ -2347,7 +1565,7 @@
           },
           {
             "date": "2026-07-17",
-            "mm": 0.0
+            "mm": 0.6
           },
           {
             "date": "2026-07-18",
@@ -2384,19 +1602,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -75,
-        "normale_mm": 38.1
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-14 sur R'Kiz (9.7 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 89% de R'Kiz et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Guérou": {
@@ -2406,31 +1628,27 @@
         "lon": -11.97
       },
       "nb_cellules": 12,
-      "ndvi_moyen": 0.124,
+      "ndvi_moyen": 0.123,
       "repartition_niveaux": {
         "faible": 0.67,
         "nu": 0.33
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 29.7,
-        "premiere_pluie_utile": "2026-07-14",
+        "cumul_16j_mm": 21.1,
+        "premiere_pluie_utile": "2026-07-17",
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.5
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
           },
           {
             "date": "2026-07-13",
-            "mm": 0.1
+            "mm": 0.0
           },
           {
             "date": "2026-07-14",
-            "mm": 9.3
+            "mm": 0.7
           },
           {
             "date": "2026-07-15",
@@ -2442,7 +1660,7 @@
           },
           {
             "date": "2026-07-17",
-            "mm": 8.4
+            "mm": 9.0
           },
           {
             "date": "2026-07-18",
@@ -2479,19 +1697,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -30,
+        "ecart_pct": -50,
         "normale_mm": 42.5
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-14 sur Guérou (29.7 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-17 sur Guérou (21.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Méderdra": {
@@ -2509,13 +1731,9 @@
       },
       "pct_degrade": 0.97,
       "pluie": {
-        "cumul_16j_mm": 2.7,
+        "cumul_16j_mm": 2.1,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -2526,11 +1744,11 @@
           },
           {
             "date": "2026-07-14",
-            "mm": 0.7
+            "mm": 1.2
           },
           {
             "date": "2026-07-15",
-            "mm": 0.8
+            "mm": 0.0
           },
           {
             "date": "2026-07-16",
@@ -2538,7 +1756,7 @@
           },
           {
             "date": "2026-07-17",
-            "mm": 0.6
+            "mm": 0.3
           },
           {
             "date": "2026-07-18",
@@ -2575,12 +1793,16 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -88,
+        "ecart_pct": -91,
         "normale_mm": 22.5
       },
       "alerte": {
@@ -2606,79 +1828,14 @@
       },
       "pct_degrade": 0.99,
       "pluie": {
-        "cumul_16j_mm": 1.1,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.2
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.3
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -69,
-        "normale_mm": 3.6
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "rouge",
@@ -2694,92 +1851,27 @@
         "lon": -14.1078
       },
       "nb_cellules": 152,
-      "ndvi_moyen": 0.087,
+      "ndvi_moyen": 0.086,
       "repartition_niveaux": {
-        "faible": 0.18,
-        "nu": 0.82
+        "faible": 0.15,
+        "nu": 0.85
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 5.7,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 2.1
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 3.6
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -37,
-        "normale_mm": 9.0
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
-        "niveau": "orange",
-        "couleur": "#C4870A",
-        "titre_fr": "Saison plus sèche",
-        "message_fr": "Pluies sur Boutilimit inférieures de 37% à la normale. Anticiper une pression sur les ressources."
+        "niveau": "rouge",
+        "couleur": "#B03A2E",
+        "titre_fr": "Alerte pâturage critique",
+        "message_fr": "Pâturage épuisé sur 100% de Boutilimit et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Magta-Lahjar": {
@@ -2789,32 +1881,28 @@
         "lon": -12.9436
       },
       "nb_cellules": 66,
-      "ndvi_moyen": 0.1,
+      "ndvi_moyen": 0.099,
       "repartition_niveaux": {
-        "faible": 0.35,
+        "faible": 0.32,
         "moyen": 0.02,
-        "nu": 0.64
+        "nu": 0.67
       },
       "pct_degrade": 0.98,
       "pluie": {
-        "cumul_16j_mm": 18.9,
+        "cumul_16j_mm": 18.1,
         "premiere_pluie_utile": "2026-07-23",
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
           },
           {
             "date": "2026-07-13",
-            "mm": 0.7
+            "mm": 0.0
           },
           {
             "date": "2026-07-14",
-            "mm": 0.8
+            "mm": 0.0
           },
           {
             "date": "2026-07-15",
@@ -2822,11 +1910,11 @@
           },
           {
             "date": "2026-07-16",
-            "mm": 0.3
+            "mm": 0.0
           },
           {
             "date": "2026-07-17",
-            "mm": 3.9
+            "mm": 4.8
           },
           {
             "date": "2026-07-18",
@@ -2862,20 +1950,24 @@
           },
           {
             "date": "2026-07-26",
-            "mm": 0.0
+            "mm": 0.15
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus humide",
-        "ecart_pct": 31,
+        "ecart_pct": 26,
         "normale_mm": 14.4
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-23 sur Magta-Lahjar (18.9 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-23 sur Magta-Lahjar (18.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Moudjéria": {
@@ -2885,43 +1977,39 @@
         "lon": -12.155
       },
       "nb_cellules": 54,
-      "ndvi_moyen": 0.095,
+      "ndvi_moyen": 0.093,
       "repartition_niveaux": {
-        "faible": 0.5,
-        "nu": 0.5
+        "faible": 0.48,
+        "nu": 0.52
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 11.1,
+        "cumul_16j_mm": 19.3,
         "premiere_pluie_utile": "2026-07-17",
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
           },
           {
             "date": "2026-07-13",
-            "mm": 0.2
+            "mm": 0.7
           },
           {
             "date": "2026-07-14",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-15",
             "mm": 0.6
           },
           {
+            "date": "2026-07-15",
+            "mm": 0.0
+          },
+          {
             "date": "2026-07-16",
-            "mm": 0.3
+            "mm": 0.0
           },
           {
             "date": "2026-07-17",
-            "mm": 5.1
+            "mm": 13.2
           },
           {
             "date": "2026-07-18",
@@ -2958,19 +2046,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -62,
+        "ecart_pct": -33,
         "normale_mm": 28.9
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-17 sur Moudjéria (11.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-17 sur Moudjéria (19.3 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Ouad-Naga": {
@@ -2988,79 +2080,14 @@
       },
       "pct_degrade": 0.99,
       "pluie": {
-        "cumul_16j_mm": 0.0,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -100,
-        "normale_mm": 13.9
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "rouge",
@@ -3076,27 +2103,23 @@
         "lon": -11.2748
       },
       "nb_cellules": 20,
-      "ndvi_moyen": 0.1,
+      "ndvi_moyen": 0.099,
       "repartition_niveaux": {
         "faible": 0.45,
         "nu": 0.55
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 13.5,
+        "cumul_16j_mm": 11.2,
         "premiere_pluie_utile": "2026-07-17",
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
           },
           {
             "date": "2026-07-13",
-            "mm": 1.2
+            "mm": 2.2
           },
           {
             "date": "2026-07-14",
@@ -3104,15 +2127,15 @@
           },
           {
             "date": "2026-07-15",
-            "mm": 0.3
+            "mm": 0.0
           },
           {
             "date": "2026-07-16",
-            "mm": 1.5
+            "mm": 0.0
           },
           {
             "date": "2026-07-17",
-            "mm": 6.9
+            "mm": 5.4
           },
           {
             "date": "2026-07-18",
@@ -3149,19 +2172,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -37,
-        "normale_mm": 21.4
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "orange",
         "couleur": "#C4870A",
         "titre_fr": "Regain possible",
-        "message_fr": "Pluie prévue le 2026-07-17 sur Boumdeïd (13.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+        "message_fr": "Pluie prévue le 2026-07-17 sur Boumdeïd (11.2 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
       }
     },
     "Tichitt": {
@@ -3171,30 +2198,26 @@
         "lon": -9.738
       },
       "nb_cellules": 298,
-      "ndvi_moyen": 0.081,
+      "ndvi_moyen": 0.08,
       "repartition_niveaux": {
         "bon": 0.0,
         "faible": 0.05,
-        "inconnu": 0.0,
+        "inconnu": 0.01,
         "moyen": 0.0,
-        "nu": 0.94
+        "nu": 0.93
       },
-      "pct_degrade": 0.99,
+      "pct_degrade": 0.98,
       "pluie": {
-        "cumul_16j_mm": 2.2,
+        "cumul_16j_mm": 1.2,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
           },
           {
             "date": "2026-07-13",
-            "mm": 1.0
+            "mm": 0.3
           },
           {
             "date": "2026-07-14",
@@ -3202,15 +2225,15 @@
           },
           {
             "date": "2026-07-15",
-            "mm": 0.3
+            "mm": 0.0
           },
           {
             "date": "2026-07-16",
-            "mm": 0.3
+            "mm": 0.2
           },
           {
             "date": "2026-07-17",
-            "mm": 0.0
+            "mm": 0.1
           },
           {
             "date": "2026-07-18",
@@ -3247,19 +2270,23 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -60,
+        "ecart_pct": -78,
         "normale_mm": 5.5
       },
       "alerte": {
         "niveau": "rouge",
         "couleur": "#B03A2E",
         "titre_fr": "Alerte pâturage critique",
-        "message_fr": "Pâturage épuisé sur 99% de Tichitt et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+        "message_fr": "Pâturage épuisé sur 98% de Tichitt et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
       }
     },
     "Tidjikja": {
@@ -3269,28 +2296,24 @@
         "lon": -11.5665
       },
       "nb_cellules": 88,
-      "ndvi_moyen": 0.087,
+      "ndvi_moyen": 0.085,
       "repartition_niveaux": {
-        "faible": 0.26,
+        "faible": 0.25,
         "inconnu": 0.01,
-        "nu": 0.73
+        "nu": 0.74
       },
       "pct_degrade": 0.99,
       "pluie": {
-        "cumul_16j_mm": 4.1,
+        "cumul_16j_mm": 3.0,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
           },
           {
             "date": "2026-07-13",
-            "mm": 0.2
+            "mm": 0.0
           },
           {
             "date": "2026-07-14",
@@ -3306,7 +2329,7 @@
           },
           {
             "date": "2026-07-17",
-            "mm": 2.7
+            "mm": 1.8
           },
           {
             "date": "2026-07-18",
@@ -3343,12 +2366,16 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -68,
+        "ecart_pct": -76,
         "normale_mm": 12.7
       },
       "alerte": {
@@ -3374,10 +2401,6 @@
         "cumul_16j_mm": 0.0,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -3437,6 +2460,10 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
@@ -3459,20 +2486,16 @@
         "lon": -13.1021
       },
       "nb_cellules": 114,
-      "ndvi_moyen": 0.074,
+      "ndvi_moyen": 0.069,
       "repartition_niveaux": {
-        "faible": 0.09,
-        "nu": 0.91
+        "faible": 0.08,
+        "nu": 0.92
       },
       "pct_degrade": 1.0,
       "pluie": {
         "cumul_16j_mm": 0.6,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -3532,6 +2555,10 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
@@ -3554,7 +2581,7 @@
         "lon": -15.1102
       },
       "nb_cellules": 213,
-      "ndvi_moyen": 0.084,
+      "ndvi_moyen": 0.083,
       "repartition_niveaux": {
         "faible": 0.12,
         "moyen": 0.01,
@@ -3565,10 +2592,6 @@
         "cumul_16j_mm": 0.0,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -3628,6 +2651,10 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
@@ -3650,29 +2677,25 @@
         "lon": -9.3445
       },
       "nb_cellules": 830,
-      "ndvi_moyen": 0.084,
+      "ndvi_moyen": 0.083,
       "repartition_niveaux": {
         "bon": 0.0,
         "faible": 0.09,
         "moyen": 0.0,
-        "nu": 0.9
+        "nu": 0.91
       },
       "pct_degrade": 0.99,
       "pluie": {
-        "cumul_16j_mm": 0.6,
+        "cumul_16j_mm": 0.8,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
           },
           {
             "date": "2026-07-13",
-            "mm": 0.0
+            "mm": 0.2
           },
           {
             "date": "2026-07-14",
@@ -3725,12 +2748,16 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "plus sec",
-        "ecart_pct": -60,
+        "ecart_pct": -47,
         "normale_mm": 1.5
       },
       "alerte": {
@@ -3747,86 +2774,21 @@
         "lon": -13.4579
       },
       "nb_cellules": 117,
-      "ndvi_moyen": 0.069,
+      "ndvi_moyen": 0.063,
       "repartition_niveaux": {
         "faible": 0.02,
         "nu": 0.98
       },
       "pct_degrade": 1.0,
       "pluie": {
-        "cumul_16j_mm": 0.7,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.1
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.6
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -56,
-        "normale_mm": 1.6
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "rouge",
@@ -3850,79 +2812,14 @@
       },
       "pct_degrade": 0.96,
       "pluie": {
-        "cumul_16j_mm": 0.0,
+        "cumul_16j_mm": 0,
         "premiere_pluie_utile": null,
-        "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-12",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-13",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-14",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-15",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-16",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-17",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-18",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-19",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-20",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-21",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-22",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-23",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-25",
-            "mm": 0.0
-          },
-          {
-            "date": "2026-07-26",
-            "mm": 0.0
-          }
-        ]
+        "detail": []
       },
       "tendance": {
-        "tendance": "plus sec",
-        "ecart_pct": -100,
-        "normale_mm": 0.5
+        "tendance": "inconnue",
+        "ecart_pct": null,
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "rouge",
@@ -3938,22 +2835,18 @@
         "lon": -10.2272
       },
       "nb_cellules": 827,
-      "ndvi_moyen": 0.073,
+      "ndvi_moyen": 0.069,
       "repartition_niveaux": {
         "bon": 0.0,
-        "faible": 0.03,
+        "faible": 0.02,
         "moyen": 0.0,
-        "nu": 0.96
+        "nu": 0.98
       },
       "pct_degrade": 0.99,
       "pluie": {
-        "cumul_16j_mm": 0.2,
+        "cumul_16j_mm": 0.0,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -4012,7 +2905,11 @@
           },
           {
             "date": "2026-07-26",
-            "mm": 0.2
+            "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
@@ -4035,7 +2932,7 @@
         "lon": -12.3075
       },
       "nb_cellules": 3,
-      "ndvi_moyen": 0.078,
+      "ndvi_moyen": 0.073,
       "repartition_niveaux": {
         "nu": 1.0
       },
@@ -4044,10 +2941,6 @@
         "cumul_16j_mm": 1.2,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -4107,6 +3000,10 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
@@ -4129,22 +3026,18 @@
         "lon": -8.6367
       },
       "nb_cellules": 456,
-      "ndvi_moyen": 0.075,
+      "ndvi_moyen": 0.073,
       "repartition_niveaux": {
         "bon": 0.0,
-        "faible": 0.06,
+        "faible": 0.05,
         "moyen": 0.01,
-        "nu": 0.93
+        "nu": 0.94
       },
       "pct_degrade": 0.99,
       "pluie": {
-        "cumul_16j_mm": 0.9,
+        "cumul_16j_mm": 0.0,
         "premiere_pluie_utile": null,
         "detail": [
-          {
-            "date": "2026-07-11",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-12",
             "mm": 0.0
@@ -4159,7 +3052,7 @@
           },
           {
             "date": "2026-07-15",
-            "mm": 0.9
+            "mm": 0.0
           },
           {
             "date": "2026-07-16",
@@ -4204,13 +3097,17 @@
           {
             "date": "2026-07-26",
             "mm": 0.0
+          },
+          {
+            "date": "2026-07-27",
+            "mm": null
           }
         ]
       },
       "tendance": {
         "tendance": "inconnue",
         "ecart_pct": null,
-        "normale_mm": 0.0
+        "normale_mm": null
       },
       "alerte": {
         "niveau": "rouge",
@@ -4222,16 +3119,82 @@
   },
   "alertes_actives": [
     {
+      "moughataa": "Maghama",
+      "wilaya": "Gorgol",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 100% de Maghama et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "Ould Yengé",
+      "wilaya": "Guidimaka",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 100% de Ould Yengé et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "Kankossa",
+      "wilaya": "Assaba",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 94% de Kankossa et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "Kaédi",
+      "wilaya": "Gorgol",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 100% de Kaédi et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
       "moughataa": "Keur-Macène",
       "wilaya": "Trarza",
       "niveau": "rouge",
       "message": "Pâturage épuisé sur 69% de Keur-Macène et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
     },
     {
+      "moughataa": "Barkéol",
+      "wilaya": "Assaba",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 97% de Barkéol et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "M'Bagne",
+      "wilaya": "Brakna",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 100% de M'Bagne et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "Aïoun",
+      "wilaya": "Hodh el Gharbi",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 100% de Aïoun et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "Kiffa",
+      "wilaya": "Assaba",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 78% de Kiffa et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
       "moughataa": "Rosso",
       "wilaya": "Trarza",
       "niveau": "rouge",
       "message": "Pâturage épuisé sur 67% de Rosso et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "Boghé",
+      "wilaya": "Brakna",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 89% de Boghé et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "Tamchakett",
+      "wilaya": "Hodh el Gharbi",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 95% de Tamchakett et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
+      "moughataa": "R'Kiz",
+      "wilaya": "Trarza",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 89% de R'Kiz et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
     },
     {
       "moughataa": "Méderdra",
@@ -4246,6 +3209,12 @@
       "message": "Pâturage épuisé sur 99% de Ouadane et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
     },
     {
+      "moughataa": "Boutilimit",
+      "wilaya": "Trarza",
+      "niveau": "rouge",
+      "message": "Pâturage épuisé sur 100% de Boutilimit et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+    },
+    {
       "moughataa": "Ouad-Naga",
       "wilaya": "Trarza",
       "niveau": "rouge",
@@ -4255,7 +3224,7 @@
       "moughataa": "Tichitt",
       "wilaya": "Tagant",
       "niveau": "rouge",
-      "message": "Pâturage épuisé sur 99% de Tichitt et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
+      "message": "Pâturage épuisé sur 98% de Tichitt et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
     },
     {
       "moughataa": "Tidjikja",
@@ -4318,112 +3287,52 @@
       "message": "Pâturage épuisé sur 99% de Bir Moghreïn et aucune pluie utile prévue sur 16 jours. Envisager un déplacement du troupeau."
     },
     {
-      "moughataa": "Sélibaby",
-      "wilaya": "Guidimaka",
-      "niveau": "orange",
-      "message": "Pluies sur Sélibaby inférieures de 84% à la normale. Anticiper une pression sur les ressources."
-    },
-    {
-      "moughataa": "Maghama",
-      "wilaya": "Gorgol",
-      "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-13 sur Maghama (10.9 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "Ould Yengé",
-      "wilaya": "Guidimaka",
-      "niveau": "orange",
-      "message": "Pluies sur Ould Yengé inférieures de 87% à la normale. Anticiper une pression sur les ressources."
-    },
-    {
-      "moughataa": "Kankossa",
-      "wilaya": "Assaba",
-      "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-17 sur Kankossa (27.0 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
       "moughataa": "Tintane",
       "wilaya": "Hodh el Gharbi",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-12 sur Tintane (31.9 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+      "message": "Pluie prévue le 2026-07-16 sur Tintane (31.6 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Kobenni",
       "wilaya": "Hodh el Gharbi",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-14 sur Kobenni (53.4 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "M'Bout",
-      "wilaya": "Gorgol",
-      "niveau": "orange",
-      "message": "Pluies sur M'Bout inférieures de 83% à la normale. Anticiper une pression sur les ressources."
+      "message": "Pluie prévue le 2026-07-16 sur Kobenni (62.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Djiguenni",
       "wilaya": "Hodh ech Chargui",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-18 sur Djiguenni (47.6 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+      "message": "Pluie prévue le 2026-07-16 sur Djiguenni (71.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Timbédra",
       "wilaya": "Hodh ech Chargui",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-18 sur Timbédra (36.7 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+      "message": "Pluie prévue le 2026-07-16 sur Timbédra (54.0 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Amourj",
       "wilaya": "Hodh ech Chargui",
       "niveau": "orange",
-      "message": "Pluies sur Amourj inférieures de 81% à la normale. Anticiper une pression sur les ressources."
+      "message": "Pluies sur Amourj inférieures de 82% à la normale. Anticiper une pression sur les ressources."
     },
     {
       "moughataa": "Bassikounou",
       "wilaya": "Hodh ech Chargui",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-11 sur Bassikounou (28.6 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "Kaédi",
-      "wilaya": "Gorgol",
-      "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-17 sur Kaédi (16.4 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+      "message": "Pluie prévue le 2026-07-15 sur Bassikounou (22.4 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Néma",
       "wilaya": "Hodh ech Chargui",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-15 sur Néma (29.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "Barkéol",
-      "wilaya": "Assaba",
-      "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-14 sur Barkéol (43.9 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "M'Bagne",
-      "wilaya": "Brakna",
-      "niveau": "orange",
-      "message": "Pluies sur M'Bagne inférieures de 83% à la normale. Anticiper une pression sur les ressources."
+      "message": "Pluie prévue le 2026-07-16 sur Néma (23.8 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Monguel",
       "wilaya": "Gorgol",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-17 sur Monguel (17.0 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "Aïoun",
-      "wilaya": "Hodh el Gharbi",
-      "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-18 sur Aïoun (25.0 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "Bababé",
-      "wilaya": "Brakna",
-      "niveau": "orange",
-      "message": "Pluies sur Bababé inférieures de 88% à la normale. Anticiper une pression sur les ressources."
+      "message": "Pluie prévue le 2026-07-23 sur Monguel (14.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Aleg",
@@ -4432,58 +3341,28 @@
       "message": "Pluie prévue le 2026-07-14 sur Aleg (26.4 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
-      "moughataa": "Kiffa",
-      "wilaya": "Assaba",
-      "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-17 sur Kiffa (12.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "Boghé",
-      "wilaya": "Brakna",
-      "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-22 sur Boghé (12.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "Tamchakett",
-      "wilaya": "Hodh el Gharbi",
-      "niveau": "orange",
-      "message": "Pluies sur Tamchakett inférieures de 64% à la normale. Anticiper une pression sur les ressources."
-    },
-    {
-      "moughataa": "R'Kiz",
-      "wilaya": "Trarza",
-      "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-14 sur R'Kiz (9.7 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
       "moughataa": "Guérou",
       "wilaya": "Assaba",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-14 sur Guérou (29.7 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
-    },
-    {
-      "moughataa": "Boutilimit",
-      "wilaya": "Trarza",
-      "niveau": "orange",
-      "message": "Pluies sur Boutilimit inférieures de 37% à la normale. Anticiper une pression sur les ressources."
+      "message": "Pluie prévue le 2026-07-17 sur Guérou (21.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Magta-Lahjar",
       "wilaya": "Brakna",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-23 sur Magta-Lahjar (18.9 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+      "message": "Pluie prévue le 2026-07-23 sur Magta-Lahjar (18.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Moudjéria",
       "wilaya": "Tagant",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-17 sur Moudjéria (11.1 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+      "message": "Pluie prévue le 2026-07-17 sur Moudjéria (19.3 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     },
     {
       "moughataa": "Boumdeïd",
       "wilaya": "Assaba",
       "niveau": "orange",
-      "message": "Pluie prévue le 2026-07-17 sur Boumdeïd (13.5 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
+      "message": "Pluie prévue le 2026-07-17 sur Boumdeïd (11.2 mm/16 j). L'herbe pourrait repousser — surveiller cette zone."
     }
   ]
 }
