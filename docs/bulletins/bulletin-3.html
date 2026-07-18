@@ -81,10 +81,10 @@ footer .auteur { color:#fff; font-weight:600; }
 <main>
 
 <div class="tuiles">
-  <div class="tuile"><div class="chiffre">0.09</div>
+  <div class="tuile"><div class="chiffre">0.11</div>
     <div class="lib">NDVI national moyen<span class="ar">متوسط مؤشر الغطاء النباتي</span></div></div>
-  <div class="tuile alerte"><div class="chiffre">97 %</div>
-    <div class="lib">du territoire en pâturage dégradé<span class="ar">من الأراضي مراعيها متدهورة</span></div></div>
+  <div class="tuile alerte"><div class="chiffre">94 %</div>
+    <div class="lib">des parcours dégradés<span class="ar">من المراعي متدهورة</span></div></div>
   <div class="tuile alerte"><div class="chiffre">13 / 50</div>
     <div class="lib">moughataa en alerte / en vigilance<span class="ar">مقاطعة في حالة إنذار / ترقّب</span></div></div>
   <div class="tuile"><div class="chiffre">48 / 63</div>
@@ -94,16 +94,20 @@ footer .auteur { color:#fff; font-weight:600; }
 <h2><span>L'essentiel</span><span class="ar">الخلاصة</span></h2>
 <div class="duo">
 <div>
-<p>Le NDVI moyen national s'établit à <strong>0.09</strong> et <strong>97 %</strong>
-du territoire est classé en pâturage dégradé ou sol nu. Le pays est à l'entrée de l'hivernage (premières pluies) : le disponible fourrager est très faible, stable par rapport à la décade précédente. <strong>13 moughataa sur 63</strong> sont en alerte rouge et 50 en vigilance orange.</p>
+<p>Le NDVI moyen national s'établit à <strong>0.11</strong> et <strong>94 %</strong>
+des parcours (zone pastorale) sont dégradés ou à nu. Le pays est à l'entrée de l'hivernage (premières pluies) : le disponible fourrager est très faible, stable par rapport à la décade précédente. <strong>13 moughataa sur 63</strong> sont en alerte rouge et 50 en vigilance orange.</p>
 <p>Des pluies utiles sont attendues presque partout : <strong>48 moughataa</strong> concernées sous 16 jours. Les premiers regains d'herbe pourraient y apparaître dès la fin de la décade.</p>
 </div>
 <div class="ar-col">
-<p>بلغ متوسط مؤشر الغطاء النباتي الوطني <strong>0.09</strong>، و<strong>97 %</strong>
-من الأراضي مصنَّفة مراعيَ متدهورة أو أرضاً جرداء. البلاد في مطلع الخريف (البواكير الأولى): المخزون العلفي ضعيف جداً، مستقر مقارنة بالعشرية السابقة. <strong>13 مقاطعة من أصل 63</strong> في حالة إنذار أحمر و50 في حالة ترقّب.</p>
+<p>بلغ متوسط مؤشر الغطاء النباتي الوطني <strong>0.11</strong>، و<strong>94 %</strong>
+من المراعي (المنطقة الرعوية) متدهورة أو جرداء. البلاد في مطلع الخريف (البواكير الأولى): المخزون العلفي ضعيف جداً، مستقر مقارنة بالعشرية السابقة. <strong>13 مقاطعة من أصل 63</strong> في حالة إنذار أحمر و50 في حالة ترقّب.</p>
 <p>أمطار مفيدة متوقعة في معظم أنحاء البلاد: <strong>48 مقاطعة</strong> معنية خلال 16 يوماً. وقد يبدأ العشب في الظهور هناك مع نهاية العشرية.</p>
 </div>
 </div>
+<p class="sous" style="font-family:system-ui,sans-serif;margin-top:2px">
+<strong>Zone pastorale</strong> = terres ayant porté de la végétation entre 1999 et 2021
+(Copernicus NDVI-LTS) ; le désert permanent est exclu des pourcentages.
+<span class="ar-cell" style="display:block"><strong>المنطقة الرعوية</strong> = أراضٍ حملت غطاءً نباتياً بين 1999 و2021 (كوبرنيكوس)؛ الصحراء الدائمة مستثناة من النسب.</span></p>
 
 <h2><span>Carte de la végétation</span><span class="ar">خريطة الغطاء النباتي</span></h2>
 <div class="carte">
@@ -118,23 +122,24 @@ du territoire est classé en pâturage dégradé ou sol nu. Le pays est à l'ent
 
 <h2><span>Situation par wilaya</span><span class="ar">الوضعية حسب الولايات</span></h2>
 <table>
-<tr><th>Wilaya</th><th class="ar-cell" style="text-align:right">الولاية</th><th class="num">NDVI</th>
-<th class="num">Dégradé</th><th class="num">Pluie max prévue</th><th class="num">Alertes 🔴 🟠</th></tr>
-<tr><td>Tiris Zemmour</td><td class='ar-cell'>تيرس زمور</td><td class='num'>0.07</td><td class='num'>99 %</td><td class='num'>2 mm</td><td class='num'><span class='pill rouge'>3</span> <span class='pill orange'>0</span></td></tr>
-<tr><td>Inchiri</td><td class='ar-cell'>إنشيري</td><td class='num'>0.09</td><td class='num'>98 %</td><td class='num'>14 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>2</span></td></tr>
-<tr><td>Nouakchott Nord</td><td class='ar-cell'>نواكشوط الشمالية</td><td class='num'>0.08</td><td class='num'>98 %</td><td class='num'>5 mm</td><td class='num'><span class='pill rouge'>1</span> <span class='pill orange'>2</span></td></tr>
-<tr><td>Dakhlet Nouadhibou</td><td class='ar-cell'>داخلت نواذيبو</td><td class='num'>0.09</td><td class='num'>97 %</td><td class='num'>4 mm</td><td class='num'><span class='pill rouge'>2</span> <span class='pill orange'>0</span></td></tr>
-<tr><td>Hodh Chargui</td><td class='ar-cell'>الحوض الشرقي</td><td class='num'>0.09</td><td class='num'>97 %</td><td class='num'>34 mm</td><td class='num'><span class='pill rouge'>1</span> <span class='pill orange'>7</span></td></tr>
-<tr><td>Tagant</td><td class='ar-cell'>تكانت</td><td class='num'>0.09</td><td class='num'>97 %</td><td class='num'>25 mm</td><td class='num'><span class='pill rouge'>2</span> <span class='pill orange'>1</span></td></tr>
-<tr><td>Adrar</td><td class='ar-cell'>أدرار</td><td class='num'>0.08</td><td class='num'>97 %</td><td class='num'>18 mm</td><td class='num'><span class='pill rouge'>2</span> <span class='pill orange'>2</span></td></tr>
-<tr><td>Trarza</td><td class='ar-cell'>الترارزة</td><td class='num'>0.10</td><td class='num'>96 %</td><td class='num'>29 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>7</span></td></tr>
-<tr><td>Brakna</td><td class='ar-cell'>لبراكنة</td><td class='num'>0.11</td><td class='num'>96 %</td><td class='num'>66 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>6</span></td></tr>
-<tr><td>Gorgol</td><td class='ar-cell'>كوركول</td><td class='num'>0.12</td><td class='num'>94 %</td><td class='num'>147 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>5</span></td></tr>
-<tr><td>Nouakchott Ouest</td><td class='ar-cell'>نواكشوط الغربية</td><td class='num'>0.08</td><td class='num'>94 %</td><td class='num'>5 mm</td><td class='num'><span class='pill rouge'>2</span> <span class='pill orange'>1</span></td></tr>
-<tr><td>Nouakchott Sud</td><td class='ar-cell'>نواكشوط الجنوبية</td><td class='num'>0.09</td><td class='num'>94 %</td><td class='num'>7 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>3</span></td></tr>
-<tr><td>Assaba</td><td class='ar-cell'>العصابة</td><td class='num'>0.12</td><td class='num'>93 %</td><td class='num'>83 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>5</span></td></tr>
-<tr><td>Hodh El Gharbi</td><td class='ar-cell'>الحوض الغربي</td><td class='num'>0.12</td><td class='num'>90 %</td><td class='num'>88 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>5</span></td></tr>
-<tr><td>Guidimagha</td><td class='ar-cell'>كيديماغا</td><td class='num'>0.13</td><td class='num'>89 %</td><td class='num'>185 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>4</span></td></tr>
+<tr><th>Wilaya</th><th class="ar-cell" style="text-align:right">الولاية</th>
+<th class="num">Part pastorale</th><th class="num">NDVI</th>
+<th class="num">Parcours dégradés</th><th class="num">Pluie max prévue</th><th class="num">Alertes 🔴 🟠</th></tr>
+<tr><td>Tiris Zemmour</td><td class='ar-cell'>تيرس زمور</td><td class='num'>8 %</td><td class='num'>0.07</td><td class='num'>99 %</td><td class='num'>2 mm</td><td class='num'><span class='pill rouge'>3</span> <span class='pill orange'>0</span></td></tr>
+<tr><td>Inchiri</td><td class='ar-cell'>إنشيري</td><td class='num'>27 %</td><td class='num'>0.09</td><td class='num'>99 %</td><td class='num'>14 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>2</span></td></tr>
+<tr><td>Nouakchott Nord</td><td class='ar-cell'>نواكشوط الشمالية</td><td class='num'>44 %</td><td class='num'>0.08</td><td class='num'>98 %</td><td class='num'>5 mm</td><td class='num'><span class='pill rouge'>1</span> <span class='pill orange'>2</span></td></tr>
+<tr><td>Dakhlet Nouadhibou</td><td class='ar-cell'>داخلت نواذيبو</td><td class='num'>14 %</td><td class='num'>0.09</td><td class='num'>98 %</td><td class='num'>4 mm</td><td class='num'><span class='pill rouge'>2</span> <span class='pill orange'>0</span></td></tr>
+<tr><td>Nouakchott Sud</td><td class='ar-cell'>نواكشوط الجنوبية</td><td class='num'>59 %</td><td class='num'>0.09</td><td class='num'>96 %</td><td class='num'>7 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>3</span></td></tr>
+<tr><td>Adrar</td><td class='ar-cell'>أدرار</td><td class='num'>4 %</td><td class='num'>0.08</td><td class='num'>96 %</td><td class='num'>18 mm</td><td class='num'><span class='pill rouge'>2</span> <span class='pill orange'>2</span></td></tr>
+<tr><td>Brakna</td><td class='ar-cell'>لبراكنة</td><td class='num'>99 %</td><td class='num'>0.11</td><td class='num'>96 %</td><td class='num'>66 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>6</span></td></tr>
+<tr><td>Hodh Chargui</td><td class='ar-cell'>الحوض الشرقي</td><td class='num'>44 %</td><td class='num'>0.11</td><td class='num'>95 %</td><td class='num'>34 mm</td><td class='num'><span class='pill rouge'>1</span> <span class='pill orange'>7</span></td></tr>
+<tr><td>Trarza</td><td class='ar-cell'>الترارزة</td><td class='num'>71 %</td><td class='num'>0.11</td><td class='num'>95 %</td><td class='num'>29 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>7</span></td></tr>
+<tr><td>Tagant</td><td class='ar-cell'>تكانت</td><td class='num'>35 %</td><td class='num'>0.09</td><td class='num'>95 %</td><td class='num'>25 mm</td><td class='num'><span class='pill rouge'>2</span> <span class='pill orange'>1</span></td></tr>
+<tr><td>Gorgol</td><td class='ar-cell'>كوركول</td><td class='num'>99 %</td><td class='num'>0.12</td><td class='num'>94 %</td><td class='num'>147 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>5</span></td></tr>
+<tr><td>Nouakchott Ouest</td><td class='ar-cell'>نواكشوط الغربية</td><td class='num'>54 %</td><td class='num'>0.08</td><td class='num'>94 %</td><td class='num'>5 mm</td><td class='num'><span class='pill rouge'>2</span> <span class='pill orange'>1</span></td></tr>
+<tr><td>Assaba</td><td class='ar-cell'>العصابة</td><td class='num'>98 %</td><td class='num'>0.12</td><td class='num'>93 %</td><td class='num'>83 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>5</span></td></tr>
+<tr><td>Hodh El Gharbi</td><td class='ar-cell'>الحوض الغربي</td><td class='num'>100 %</td><td class='num'>0.12</td><td class='num'>90 %</td><td class='num'>88 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>5</span></td></tr>
+<tr><td>Guidimagha</td><td class='ar-cell'>كيديماغا</td><td class='num'>100 %</td><td class='num'>0.13</td><td class='num'>89 %</td><td class='num'>185 mm</td><td class='num'><span class='pill rouge'>0</span> <span class='pill orange'>4</span></td></tr>
 </table>
 
 <h2><span>Points chauds — vigilance maximale</span><span class="ar">النقاط الساخنة — أقصى درجات الحذر</span></h2>
@@ -194,6 +199,7 @@ l'accès aux points d'eau.</div>
 <tr><td><strong>Cheptel</strong></td><td>FAO Gridded Livestock of the World (GLW3)</td><td>~10 km, somme zonale</td><td>Référence 2015 (dernière édition mondiale)</td><td>Ordres de grandeur ; CAMELINS NON COUVERTS ; recalage RGE 2024 prévu</td></tr>
 <tr><td><strong>Eau de surface</strong></td><td>JRC Global Surface Water v1.4</td><td>~30 m (fenêtre 150 m)</td><td>Climatologie 1984-2021</td><td>Saisonnalité historique, pas l'état du jour</td></tr>
 <tr><td><strong>Points d'eau</strong></td><td>OpenStreetMap (Overpass)</td><td>Ponctuel — 4 468 points</td><td>Extraction juillet 2026</td><td>Couverture inégale selon les zones ; contributif</td></tr>
+<tr><td><strong>Zone pastorale (masque)</strong></td><td>Copernicus NDVI Long-Term Statistics v3 (max 1999-2019)</td><td>~1 km (seuil NDVI de pic 0,15)</td><td>Climatologie 21 ans</td><td>Délimite les parcours (terres déjà végétalisées) ; le désert permanent est exclu des pourcentages</td></tr>
 <tr><td><strong>Découpage officiel</strong></td><td>COD-AB OCHA v04 (p-codes)</td><td>15 wilayas / 63 moughataa / 238 communes</td><td>Janvier 2026</td><td>Référentiel administratif officiel utilisé pour toutes les agrégations</td></tr>
 </table>
 </div>
