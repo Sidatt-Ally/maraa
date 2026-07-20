@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Màraa · مرعى — Suivi ouvert des parcours pastoraux, Mauritanie</title>
+<meta name="description" content="Màraa : application mobile anonyme et bulletin décadaire bilingue FR/AR de suivi des pâturages, de l'eau et des pluies en Mauritanie — données satellitaires ouvertes, pipeline public, zéro serveur.">
+<link rel="icon" href="icone.png">
+<style>
+  :root{
+    --encre:#1C2B28; --encre-douce:#6B7C77; --teal:#0E5A52; --teal-2:#177867;
+    --sable:#D8C08F; --sable-pale:#F2EADB; --creme:#FBF9F4; --filet:#E4DECF;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--creme);color:var(--encre);
+       font:16px/1.65 Georgia,'Noto Naskh Arabic',serif}
+  html[dir=rtl] body{font-family:'Noto Naskh Arabic','Amiri',Georgia,serif}
+  /* bascule de langue : on ne montre que la langue active */
+  html[data-lang=fr] [lang=ar]{display:none!important}
+  html[data-lang=ar] [lang=fr]{display:none!important}
+
+  .bande{background:var(--sable);border-bottom:1px solid #C9B078}
+  .bande-int{max-width:880px;margin:0 auto;padding:14px 20px;
+             display:flex;align-items:center;gap:14px}
+  .bande img{width:52px;height:52px;border-radius:14px;flex:none}
+  .bande h1{font-size:26px;margin:0;color:var(--teal);letter-spacing:.3px}
+  .bande .sous-titre{font-size:13.5px;color:#54462A;margin:2px 0 0}
+  .langue{margin-inline-start:auto;flex:none}
+  .langue button{font:600 13px Georgia,serif;padding:7px 14px;cursor:pointer;
+    border:1px solid var(--teal);background:transparent;color:var(--teal);
+    border-radius:999px}
+  .langue button.actif{background:var(--teal);color:#fff}
+  .langue button+button{margin-inline-start:6px}
+
+  main{max-width:880px;margin:0 auto;padding:8px 20px 48px}
+  .heros{padding:30px 0 6px}
+  .heros h2{font-size:30px;line-height:1.25;margin:0 0 10px;color:var(--teal);
+            text-wrap:balance}
+  .heros p{font-size:17px;max-width:640px;margin:0 0 6px}
+  .heros .note{font-size:13.5px;color:var(--encre-douce)}
+
+  .chiffres{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
+  .chiffre{background:var(--sable-pale);border:1px solid var(--filet);
+    border-radius:14px;padding:10px 16px;text-align:center;flex:1;min-width:120px}
+  .chiffre b{display:block;font-size:22px;color:var(--teal);
+             font-variant-numeric:tabular-nums}
+  .chiffre span{font-size:12px;color:var(--encre-douce)}
+
+  h3{font-size:13px;letter-spacing:2px;text-transform:uppercase;
+     color:var(--encre-douce);margin:38px 0 14px;border-bottom:1px solid var(--filet);
+     padding-bottom:8px}
+  .cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+  .carte{background:#fff;border:1px solid var(--filet);border-radius:16px;
+         padding:18px;display:flex;flex-direction:column;gap:8px}
+  .carte .pictogramme{font-size:26px}
+  .carte h4{margin:0;font-size:17px;color:var(--teal)}
+  .carte p{margin:0;font-size:14px;color:#3D4C48;flex:1}
+  .carte a.bouton{display:inline-block;margin-top:4px;padding:9px 16px;
+    background:var(--teal);color:#fff;text-decoration:none;border-radius:10px;
+    font-size:14px;font-weight:700;text-align:center}
+  .carte a.bouton.secondaire{background:transparent;color:var(--teal);
+    border:1.5px solid var(--teal)}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;
+        border:1px solid var(--filet);border-radius:14px;overflow:hidden}
+  .table-defilante{overflow-x:auto;border-radius:14px}
+  th,td{padding:9px 12px;text-align:start;border-bottom:1px solid var(--filet)}
+  th{background:var(--sable-pale);font-size:12px;letter-spacing:.6px;
+     color:#54462A;text-transform:uppercase}
+  tr:last-child td{border-bottom:none}
+  td:first-child{font-weight:700;color:var(--teal)}
+
+  .honnete{background:var(--sable-pale);border-inline-start:4px solid var(--sable);
+    border-radius:12px;padding:14px 16px;font-size:14px;margin-top:14px}
+
+  footer{border-top:1px solid var(--filet);margin-top:44px;padding-top:18px;
+         font-size:13px;color:var(--encre-douce)}
+  footer .citation{font-style:italic}
+  a{color:var(--teal-2)}
+  @media (max-width:560px){.heros h2{font-size:24px}.bande h1{font-size:22px}}
+</style>
+</head>
+<body>
+
+<div class="bande"><div class="bande-int">
+  <img src="icone.png" alt="Màraa">
+  <div>
+    <h1>Màraa · مرعى</h1>
+    <p class="sous-titre" lang="fr">Suivi ouvert des parcours pastoraux — Mauritanie</p>
+    <p class="sous-titre" lang="ar">متابعة مفتوحة للمراعي — موريتانيا</p>
+  </div>
+  <div class="langue">
+    <button id="btn-fr" onclick="basculer('fr')">FR</button>
+    <button id="btn-ar" onclick="basculer('ar')">العربية</button>
+  </div>
+</div></div>
+
+<main>
+  <section class="heros">
+    <div lang="fr">
+      <h2>Où est l'herbe, où est l'eau, où va la pluie&nbsp;?</h2>
+      <p>Màraa réunit chaque décade les données satellitaires et météorologiques
+      ouvertes sur les pâturages, l'eau de surface et les pluies des
+      63&nbsp;moughataa de Mauritanie — et les restitue en français et en arabe,
+      dans une application qui fonctionne hors-ligne et un bulletin public.</p>
+      <p class="note">Projet ouvert, anonyme et sans serveur : aucune inscription,
+      aucune donnée personnelle collectée, tout le traitement est public et
+      reproductible.</p>
+    </div>
+    <div lang="ar" dir="rtl">
+      <h2>أين العشب، أين الماء، وأين يتجه المطر؟</h2>
+      <p>يجمع «مرعى» كل عشرة أيام البيانات الفضائية والمناخية المفتوحة عن المراعي
+      والمياه السطحية والأمطار في 63 مقاطعة موريتانية — ويقدمها بالعربية والفرنسية
+      في تطبيق يعمل دون إنترنت ونشرة عمومية.</p>
+      <p class="note">مشروع مفتوح ومجهول وبلا خادم: لا تسجيل، لا جمع لأي بيانات
+      شخصية، وكل المعالجة علنية وقابلة لإعادة الإنتاج.</p>
+    </div>
+
+    <div class="chiffres">
+      <div class="chiffre"><b>63</b><span lang="fr">moughataa suivies</span><span lang="ar">مقاطعة متابَعة</span></div>
+      <div class="chiffre"><b>238</b><span lang="fr">communes</span><span lang="ar">بلدية</span></div>
+      <div class="chiffre"><b>4&nbsp;465</b><span lang="fr">points d'eau recensés</span><span lang="ar">نقطة ماء محصاة</span></div>
+      <div class="chiffre"><b lang="fr">10&nbsp;j</b><b lang="ar">10 أيام</b><span lang="fr">cadence du bulletin</span><span lang="ar">دورية النشرة</span></div>
+    </div>
+  </section>
+
+  <h3 lang="fr">Trois produits, un même socle de données</h3>
+  <h3 lang="ar" dir="rtl">ثلاثة منتجات، قاعدة بيانات واحدة</h3>
+  <div class="cartes">
+    <div class="carte">
+      <div class="pictogramme">📱</div>
+      <h4 lang="fr">L'application</h4>
+      <h4 lang="ar" dir="rtl">التطبيق</h4>
+      <p lang="fr">État des pâturages, points d'eau, pluies observées et prévues,
+      classements et itinéraires de transhumance. Bilingue, hors-ligne, anonyme.
+      Version de test Android.</p>
+      <p lang="ar" dir="rtl">حالة المراعي، نقاط الماء، الأمطار المرصودة والمتوقعة،
+      التصنيفات ومسارات الترحال. ثنائي اللغة، يعمل دون إنترنت، مجهول.
+      نسخة تجريبية لأندرويد.</p>
+      <a class="bouton" href="https://nightly.link/Sidatt-Ally/maraa/workflows/build-apk/main/maraa-apk.zip">
+        <span lang="fr">Télécharger l'APK</span><span lang="ar">تحميل التطبيق APK</span></a>
+    </div>
+    <div class="carte">
+      <div class="pictogramme">📰</div>
+      <h4 lang="fr">Le bulletin décadaire</h4>
+      <h4 lang="ar" dir="rtl">النشرة العشرية</h4>
+      <p lang="fr">Un bulletin pastoral bilingue publié les 1, 11 et 21 de chaque
+      mois : cartes, alertes, cumuls de pluie, évolution du couvert végétal —
+      généré automatiquement, sans intervention humaine.</p>
+      <p lang="ar" dir="rtl">نشرة رعوية ثنائية اللغة تصدر أيام 1 و11 و21 من كل شهر:
+      خرائط، تنبيهات، تراكمات الأمطار، تطور الغطاء النباتي — تُنتَج آليًا دون
+      تدخل بشري.</p>
+      <a class="bouton" href="bulletins/">
+        <span lang="fr">Lire les bulletins</span><span lang="ar">قراءة النشرات</span></a>
+    </div>
+    <div class="carte">
+      <div class="pictogramme">🔓</div>
+      <h4 lang="fr">Le code et les données</h4>
+      <h4 lang="ar" dir="rtl">الشيفرة والبيانات</h4>
+      <p lang="fr">Tout est public : le code du pipeline, les données produites et
+      leur historique. Chaque chiffre du bulletin peut être retracé jusqu'à sa
+      source satellite.</p>
+      <p lang="ar" dir="rtl">كل شيء علني: شيفرة المعالجة، البيانات المنتَجة
+      وسجلّها. كل رقم في النشرة يمكن تتبّعه حتى مصدره الفضائي.</p>
+      <a class="bouton secondaire" href="https://github.com/Sidatt-Ally/maraa">
+        <span lang="fr">Voir le dépôt ouvert</span><span lang="ar">عرض المستودع المفتوح</span></a>
+    </div>
+  </div>
+
+  <h3 lang="fr">Les sources</h3>
+  <h3 lang="ar" dir="rtl">المصادر</h3>
+  <div class="table-defilante"><table>
+    <tr><th lang="fr">Information</th><th lang="ar">المعلومة</th>
+        <th lang="fr">Source</th><th lang="ar">المصدر</th>
+        <th lang="fr">Cadence</th><th lang="ar">الدورية</th></tr>
+    <tr><td lang="fr">Couvert végétal (NDVI)</td><td lang="ar">الغطاء النباتي (NDVI)</td>
+        <td>Copernicus Sentinel-2</td><td lang="fr">décadaire</td><td lang="ar">كل 10 أيام</td></tr>
+    <tr><td lang="fr">Eau des mares (radar)</td><td lang="ar">ماء البحيرات (رادار)</td>
+        <td>Copernicus Sentinel-1</td><td lang="fr">décadaire</td><td lang="ar">كل 10 أيام</td></tr>
+    <tr><td lang="fr">Pluie observée</td><td lang="ar">الأمطار المرصودة</td>
+        <td>NASA GPM IMERG</td><td lang="fr">quotidienne + horaire</td><td lang="ar">يومية + كل ساعة</td></tr>
+    <tr><td lang="fr">Prévisions de pluie (16 j)</td><td lang="ar">توقعات الأمطار (16 يومًا)</td>
+        <td>Open-Meteo / ECMWF</td><td lang="fr">décadaire</td><td lang="ar">كل 10 أيام</td></tr>
+    <tr><td lang="fr">Cheptel par moughataa</td><td lang="ar">الثروة الحيوانية بالمقاطعة</td>
+        <td lang="fr">RGE 2024 (officiel)</td><td lang="ar">تعداد 2024 (رسمي)</td>
+        <td lang="fr">recensement</td><td lang="ar">تعداد</td></tr>
+    <tr><td lang="fr">Points d'eau, découpage</td><td lang="ar">نقاط الماء، التقسيم الإداري</td>
+        <td>OpenStreetMap · OCHA COD-AB</td><td lang="fr">référentiel</td><td lang="ar">مرجعي</td></tr>
+  </table></div>
+
+  <div class="honnete">
+    <span lang="fr"><b>Honnêteté des données :</b> les pluies et l'eau de surface
+    sont des estimations satellitaires (~10&nbsp;km), pas des mesures au sol ;
+    l'état de fonctionnement des points d'eau n'est affiché que lorsqu'il est
+    réellement connu. Chaque écran et chaque bulletin rappellent ces limites.</span>
+    <span lang="ar" dir="rtl"><b>صدق البيانات:</b> الأمطار والمياه السطحية تقديرات
+    فضائية (~10 كلم) وليست قياسات ميدانية؛ وحالة اشتغال نقاط الماء لا تُعرض إلا
+    عندما تكون معروفة فعلًا. كل شاشة وكل نشرة تُذكّر بهذه الحدود.</span>
+  </div>
+
+  <footer>
+    <p lang="fr" class="citation">Citation : Màraa (2026). Bulletin pastoral
+    décadaire, Mauritanie. — Établi à partir des données satellitaires et
+    météorologiques réunies par Màraa.</p>
+    <p lang="ar" dir="rtl" class="citation">الاستشهاد: مرعى (2026). النشرة الرعوية
+    العشرية، موريتانيا. — أُعدّت من البيانات الفضائية والمناخية التي جمعها «مرعى».</p>
+    <p>
+      <span lang="fr"><a href="bulletins/">Bulletins</a> ·
+        <a href="privacy.html">Confidentialité</a> ·
+        <a href="https://github.com/Sidatt-Ally/maraa/issues">Contact (GitHub)</a></span>
+      <span lang="ar"><a href="bulletins/">النشرات</a> ·
+        <a href="privacy.html">الخصوصية</a> ·
+        <a href="https://github.com/Sidatt-Ally/maraa/issues">تواصل (GitHub)</a></span>
+    </p>
+  </footer>
+</main>
+
+<script>
+function basculer(l){
+  document.documentElement.setAttribute('data-lang', l);
+  document.documentElement.lang = l;
+  document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+  document.getElementById('btn-fr').classList.toggle('actif', l === 'fr');
+  document.getElementById('btn-ar').classList.toggle('actif', l === 'ar');
+  try { localStorage.setItem('maraa-langue', l); } catch(e) {}
+}
+basculer(
+  (function(){
+    try { var m = localStorage.getItem('maraa-langue'); if (m) return m; } catch(e) {}
+    return (navigator.language || '').toLowerCase().startsWith('ar') ? 'ar' : 'fr';
+  })()
+);
+</script>
+</body>
+</html>
