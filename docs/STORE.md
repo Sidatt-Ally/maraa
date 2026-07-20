@@ -3,6 +3,9 @@
 ## Nom de l'application
 **Màraa — Pâturages & alertes**
 
+## Sous-titre institutionnel (site, communication)
+Observatoire numérique des parcours de Mauritanie · المرصد الرقمي للمراعي في موريتانيا
+
 ## Description courte (≤ 80 caractères)
 - **FR** : L'état des pâturages et de l'eau en Mauritanie, vu du satellite.
 - **AR** : حالة المراعي والمياه في موريتانيا من الأقمار الصناعية.
