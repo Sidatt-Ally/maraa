@@ -1,17 +1,17 @@
-# Fiche Play Store — Màraa (à copier-coller dans la Console)
+# Fiche Play Store — Maraa (à copier-coller dans la Console)
 
 ## Nom de l'application
-**Màraa — Pâturages & alertes**
+**Maraa — Pâturages & alertes**
 
 ## Sous-titre institutionnel (site, communication)
-Observatoire numérique des parcours de Mauritanie · المرصد الرقمي للمراعي في موريتانيا
+Observatoire numérique des pâturages et des ressources pastorales de Mauritanie · المرصد الرقمي للمراعي والموارد الرعوية في موريتانيا
 
 ## Description courte (≤ 80 caractères)
 - **FR** : L'état des pâturages et de l'eau en Mauritanie, vu du satellite.
 - **AR** : حالة المراعي والمياه في موريتانيا من الأقمار الصناعية.
 
 ## Description complète (FR)
-Màraa aide l'éleveur mauritanien à décider où déplacer son troupeau, à partir
+Maraa aide l'éleveur mauritanien à décider où déplacer son troupeau, à partir
 de données satellite fiables et gratuites — sans dépendre d'informations
 locales incertaines.
 
@@ -31,7 +31,7 @@ sans réseau.
 Sources : Copernicus (NDVI), Open-Meteo (pluie), OpenStreetMap (points d'eau),
 OCHA COD-AB (frontières officielles).
 
-Màraa ne crée aucun compte, n'affiche aucune publicité et ne transmet aucune
+Maraa ne crée aucun compte, n'affiche aucune publicité et ne transmet aucune
 donnée personnelle.
 
 ## Description complète (AR)

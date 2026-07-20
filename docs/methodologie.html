@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Méthodologie — Màraa · مرعى</title>
-<meta name="description" content="Comment chaque chiffre de l'observatoire Màraa est produit : sources satellitaires, seuils, règles d'alerte, limites — données publiées vérifiables, audit sur convention.">
+<title>Méthodologie — Maraa · مرعى</title>
+<meta name="description" content="Comment chaque chiffre de l'observatoire Maraa est produit : sources satellitaires, seuils, règles d'alerte, limites — données publiées vérifiables, audit sur convention.">
+
+<meta property="og:title" content="Méthodologie — Maraa · مرعى">
+<meta property="og:description" content="Comment chaque chiffre de l'observatoire Maraa est produit : sources satellitaires, seuils, règles d'alerte, limites — données publiées vérifiables, audit sur convention.">
+<meta property="og:image" content="https://sidatt-ally.github.io/maraa/icone.png">
+<meta property="og:type" content="website">
 <link rel="icon" href="icone.png">
 <style>
   :root{
@@ -76,11 +81,11 @@
 
 <div class="bande">
   <div class="bande-int">
-    <a href="./"><img src="icone.png" alt="Màraa"></a>
+    <a href="./"><img src="icone.png" alt="Maraa"></a>
     <div>
-      <h1>Màraa · مرعى</h1>
-      <p class="descripteur" lang="fr">Observatoire numérique des parcours de Mauritanie</p>
-      <p class="descripteur" lang="ar">المرصد الرقمي للمراعي في موريتانيا</p>
+      <h1>Maraa · مرعى</h1>
+      <p class="descripteur" lang="fr">Observatoire numérique des pâturages et des ressources pastorales de Mauritanie</p>
+      <p class="descripteur" lang="ar">المرصد الرقمي للمراعي والموارد الرعوية في موريتانيا</p>
     </div>
     <div class="langue">
       <button id="btn-fr" onclick="basculer('fr')">FR</button>
@@ -137,7 +142,7 @@
     <text x="103" y="126" text-anchor="middle" font-size="10" fill="#6B7C77" lang="ar">أقمار، نماذج، تعدادات</text>
     <path d="M204 80 H244" stroke="#0E5A52" stroke-width="2" marker-end="url(#f)"/>
     <rect x="252" y="14" width="190" height="132" rx="12" fill="#0E5A52"/>
-    <text x="347" y="44" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold" lang="fr">⚙️ Usine Màraa</text>
+    <text x="347" y="44" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold" lang="fr">⚙️ Usine Maraa</text>
     <text x="347" y="44" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold" lang="ar">⚙️ مصنع مرعى</text>
     <text x="347" y="68" text-anchor="middle" font-size="11" fill="#CFE3DF" lang="fr">pipeline automatique</text>
     <text x="347" y="68" text-anchor="middle" font-size="11" fill="#CFE3DF" lang="ar">خط معالجة آلي</text>
@@ -164,7 +169,7 @@
   <h3 lang="fr">1 · Architecture : zéro serveur</h3>
   <h3 lang="ar" dir="rtl">1 · البنية: بلا خادم</h3>
   <div lang="fr">
-    <p>Màraa n'exploite aucun serveur. Un pipeline Python s'exécute sur
+    <p>Maraa n'exploite aucun serveur. Un pipeline Python s'exécute sur
     l'infrastructure gratuite de GitHub Actions : les <b>1, 11 et 21 de chaque
     mois à 04h00 UTC</b> (données décadaires + bulletin), et <b>chaque heure</b>
     pour la pluie des dernières heures. Les résultats sont des fichiers JSON
@@ -348,6 +353,18 @@
   </table></div>
 
   <span id="s7"></span>
+  <p lang="fr" style="font-size:13.5px;color:var(--encre-douce)">Complément
+  visuel : l'application propose un lien vers la carte publique de pluie de
+  <a href="https://zoom.earth/maps/precipitation/#view=20.5,-10.5,6z">zoom.earth</a>
+  (service tiers, ~10 min de latence) — un confort de visualisation, hors
+  traçabilité de l'observatoire : les chiffres publiés viennent exclusivement
+  des sources du tableau ci-dessus.</p>
+  <p lang="ar" dir="rtl" style="font-size:13.5px;color:var(--encre-douce)">مكمل
+  بصري: يتيح التطبيق رابطًا إلى خريطة الأمطار العامة
+  <a href="https://zoom.earth/maps/precipitation/#view=20.5,-10.5,6z">zoom.earth</a>
+  (خدمة خارجية، ~10 دقائق تأخير) — راحة بصرية خارج تتبع المرصد: الأرقام
+  المنشورة تأتي حصرًا من مصادر الجدول أعلاه.</p>
+
   <h3 lang="fr">7 · Le cheptel</h3>
   <h3 lang="ar" dir="rtl">7 · الثروة الحيوانية</h3>
   <p lang="fr">Effectifs officiels du <b>Recensement Général de l'Élevage
@@ -407,7 +424,7 @@
   <a href="./">الصفحة الرئيسية</a> للتواصل.</p>
 
   <footer>
-    <p lang="fr" style="font-style:italic">Citation : Màraa (2026).
+    <p lang="fr" style="font-style:italic">Citation : Maraa (2026).
     Méthodologie du suivi pastoral décadaire, Mauritanie.</p>
     <p lang="ar" dir="rtl" style="font-style:italic">الاستشهاد: مرعى (2026).
     منهجية المتابعة الرعوية العشرية، موريتانيا.</p>
