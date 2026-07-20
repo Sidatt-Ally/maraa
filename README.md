@@ -1,4 +1,6 @@
-# Màraa · مرعى — Données pastorales ouvertes (Mauritanie)
+# Màraa · مرعى — Observatoire numérique des parcours de Mauritanie
+
+*المرصد الرقمي للمراعي في موريتانيا — données pastorales ouvertes*
 
 Ce dépôt publie les **produits** du système Màraa :
 
