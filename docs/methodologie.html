@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Méthodologie — Màraa · مرعى</title>
+<meta name="description" content="Comment chaque chiffre de Màraa est produit : sources satellitaires, seuils, règles d'alerte, limites. Tout est vérifiable dans le code public.">
+<link rel="icon" href="icone.png">
+<style>
+  :root{
+    --encre:#1C2B28; --encre-douce:#6B7C77; --teal:#0E5A52; --teal-2:#177867;
+    --sable:#D8C08F; --sable-pale:#F2EADB; --creme:#FBF9F4; --filet:#E4DECF;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--creme);color:var(--encre);
+       font:16px/1.65 Georgia,'Noto Naskh Arabic',serif}
+  html[dir=rtl] body{font-family:'Noto Naskh Arabic','Amiri',Georgia,serif}
+  html[data-lang=fr] [lang=ar]{display:none!important}
+  html[data-lang=ar] [lang=fr]{display:none!important}
+
+  .bande{background:var(--sable);border-bottom:1px solid #C9B078}
+  .bande-int{max-width:820px;margin:0 auto;padding:12px 20px;
+             display:flex;align-items:center;gap:12px}
+  .bande img{width:40px;height:40px;border-radius:11px;flex:none}
+  .bande h1{font-size:20px;margin:0;color:var(--teal)}
+  .bande a.retour{font-size:13px;color:#54462A;text-decoration:none}
+  .langue{margin-inline-start:auto;flex:none}
+  .langue button{font:600 13px Georgia,serif;padding:6px 13px;cursor:pointer;
+    border:1px solid var(--teal);background:transparent;color:var(--teal);
+    border-radius:999px}
+  .langue button.actif{background:var(--teal);color:#fff}
+  .langue button+button{margin-inline-start:6px}
+
+  main{max-width:820px;margin:0 auto;padding:10px 20px 48px}
+  h2{font-size:26px;color:var(--teal);margin:26px 0 6px;text-wrap:balance}
+  .chapo{font-size:16.5px;color:#3D4C48;max-width:640px}
+  h3{font-size:13px;letter-spacing:2px;text-transform:uppercase;
+     color:var(--encre-douce);margin:36px 0 12px;
+     border-bottom:1px solid var(--filet);padding-bottom:8px}
+  p{margin:10px 0}
+  code{font:13.5px ui-monospace,Consolas,monospace;background:var(--sable-pale);
+       padding:1px 6px;border-radius:6px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;
+        border:1px solid var(--filet);border-radius:12px;overflow:hidden}
+  .table-defilante{overflow-x:auto;border-radius:12px;margin:12px 0}
+  th,td{padding:8px 11px;text-align:start;border-bottom:1px solid var(--filet);
+        vertical-align:top}
+  th{background:var(--sable-pale);font-size:11.5px;letter-spacing:.6px;
+     color:#54462A;text-transform:uppercase}
+  tr:last-child td{border-bottom:none}
+  td:first-child{font-weight:700;color:var(--teal);white-space:nowrap}
+  .pastille{display:inline-block;width:11px;height:11px;border-radius:99px;
+            margin-inline-end:6px;vertical-align:baseline}
+  .honnete{background:var(--sable-pale);border-inline-start:4px solid var(--sable);
+    border-radius:12px;padding:13px 16px;font-size:14px;margin:14px 0}
+  ul{padding-inline-start:22px}li{margin:5px 0}
+  footer{border-top:1px solid var(--filet);margin-top:44px;padding-top:16px;
+         font-size:13px;color:var(--encre-douce)}
+  a{color:var(--teal-2)}
+</style>
+</head>
+<body>
+
+<div class="bande"><div class="bande-int">
+  <a href="./"><img src="icone.png" alt="Màraa"></a>
+  <div>
+    <h1 lang="fr">Méthodologie</h1>
+    <h1 lang="ar">المنهجية</h1>
+    <a class="retour" href="./" lang="fr">← Màraa, l'accueil</a>
+    <a class="retour" href="./" lang="ar">→ مرعى، الصفحة الرئيسية</a>
+  </div>
+  <div class="langue">
+    <button id="btn-fr" onclick="basculer('fr')">FR</button>
+    <button id="btn-ar" onclick="basculer('ar')">العربية</button>
+  </div>
+</div></div>
+
+<main>
+  <div lang="fr">
+    <h2>Comment chaque chiffre est produit</h2>
+    <p class="chapo">Cette page décrit les sources, les seuils et les règles —
+    exactement tels qu'ils sont écrits dans le
+    <a href="https://github.com/Sidatt-Ally/maraa">code public</a>. Rien ici
+    n'est déclaratif : chaque paramètre cité peut être retrouvé dans le
+    pipeline, et chaque publication est conditionnée par des tests automatisés.</p>
+  </div>
+  <div lang="ar" dir="rtl">
+    <h2>كيف يُنتَج كل رقم</h2>
+    <p class="chapo">تصف هذه الصفحة المصادر والعتبات والقواعد — تمامًا كما هي
+    مكتوبة في <a href="https://github.com/Sidatt-Ally/maraa">الشيفرة العلنية</a>.
+    لا شيء هنا تصريحي: كل معيار مذكور يمكن العثور عليه في خط المعالجة، وكل نشر
+    مشروط باختبارات آلية.</p>
+  </div>
+
+  <h3 lang="fr">1 · Architecture : zéro serveur</h3>
+  <h3 lang="ar" dir="rtl">1 · البنية: بلا خادم</h3>
+  <div lang="fr">
+    <p>Màraa n'exploite aucun serveur. Un pipeline Python s'exécute sur
+    l'infrastructure gratuite de GitHub Actions : les <b>1, 11 et 21 de chaque
+    mois à 04h00 UTC</b> (données décadaires + bulletin), et <b>chaque heure</b>
+    pour la pluie des dernières heures. Les résultats sont des fichiers JSON
+    statiques versionnés dans le dépôt : l'application les télécharge telle
+    une page web, puis fonctionne hors-ligne. <b>22 tests automatisés</b>
+    doivent passer avant toute publication ; un produit optionnel manquant
+    (nuages, panne d'une source) n'interrompt jamais les autres.</p>
+  </div>
+  <div lang="ar" dir="rtl">
+    <p>لا يستخدم «مرعى» أي خادم. يعمل خط معالجة بلغة بايثون على البنية المجانية
+    لـ GitHub Actions: أيام <b>1 و11 و21 من كل شهر في 04:00 UTC</b> (البيانات
+    العشرية + النشرة)، و<b>كل ساعة</b> لأمطار الساعات الأخيرة. النتائج ملفات
+    JSON ثابتة مؤرشفة في المستودع: يحمّلها التطبيق كما تُحمَّل صفحة ويب، ثم
+    يعمل دون إنترنت. يجب أن تنجح <b>22 اختبارًا آليًا</b> قبل أي نشر؛ ولا يوقف
+    غيابُ منتج اختياري (غيوم، عطل مصدر) بقية المنتجات أبدًا.</p>
+  </div>
+
+  <h3 lang="fr">2 · Référentiel administratif</h3>
+  <h3 lang="ar" dir="rtl">2 · المرجع الإداري</h3>
+  <div lang="fr">
+    <p>Découpage officiel <b>OCHA COD-AB</b> (p-codes) : 15 wilayas,
+    63 moughataa, 238 communes. Les noms arabes des communes proviennent des
+    documents officiels de découpage administratif, complétés et validés
+    graphie par graphie (y compris le gāf mauritanien كَ).</p>
+  </div>
+  <div lang="ar" dir="rtl">
+    <p>التقسيم الرسمي <b>OCHA COD-AB</b> (رموز p-codes): 15 ولاية،
+    63 مقاطعة، 238 بلدية. الأسماء العربية للبلديات مأخوذة من وثائق التقسيم
+    الإداري الرسمية، مستكملة ومدققة رسمًا رسمًا (بما في ذلك الگاف الموريتاني كَ).</p>
+  </div>
+
+  <h3 lang="fr">3 · Pâturages : NDVI Sentinel-2</h3>
+  <h3 lang="ar" dir="rtl">3 · المراعي: مؤشر NDVI من سنتينل-2</h3>
+  <div lang="fr">
+    <p>L'indice de végétation NDVI est calculé depuis <b>Copernicus
+    Sentinel-2 L2A</b> (Process API du Copernicus Data Space) : un GeoTIFF
+    national à ~1 km de résolution, mosaïque des <b>12 derniers jours</b> en
+    « max-NDVI compositing » — pour chaque pixel, la meilleure observation
+    sans nuage (filtre de scène SCL) de la période. Les statistiques par
+    moughataa et commune sont calculées en rasterisant les polygones officiels
+    sur cette grille.</p>
+    <p><b>Masque pastoral :</b> les statistiques ne portent que sur les pixels
+    de <i>parcours</i>, définis par la climatologie Copernicus
+    <b>NDVI Long-Term Statistics 1999-2019</b> : un pixel est un parcours si
+    son NDVI de pic historique atteint <b>0,15</b>. Le désert permanent est
+    ainsi exclu des pourcentages. Une unité dont moins de <b>5 %</b> de la
+    surface est un parcours est classée « hors zone pastorale » et ne peut pas
+    déclencher d'alerte.</p>
+  </div>
+  <div lang="ar" dir="rtl">
+    <p>يُحسب مؤشر الغطاء النباتي NDVI من <b>كوبرنيكوس سنتينل-2 L2A</b>‏
+    (Process API): ملف GeoTIFF وطني بدقة ~1 كلم، فسيفساء <b>آخر 12 يومًا</b>
+    بطريقة «أفضل NDVI»: لكل بكسل أفضلُ رصد خالٍ من الغيوم (مرشِّح SCL) خلال
+    الفترة. تُحسب الإحصاءات لكل مقاطعة وبلدية بإسقاط الحدود الرسمية على هذه
+    الشبكة.</p>
+    <p><b>القناع الرعوي:</b> لا تشمل الإحصاءات إلا بكسلات <i>المراعي</i>،
+    المعرَّفة بمناخية كوبرنيكوس <b>NDVI Long-Term Statistics 1999-2019</b>:
+    البكسل مرعى إذا بلغ ذروةَ NDVI تاريخية قدرها <b>0,15</b>. وهكذا تُستبعد
+    الصحراء الدائمة من النسب. الوحدة التي تقل مراعيها عن <b>5%</b> من مساحتها
+    تُصنَّف «خارج المنطقة الرعوية» ولا يمكن أن تُطلق تنبيهًا.</p>
+  </div>
+  <div class="table-defilante"><table>
+    <tr><th lang="fr">Classe</th><th lang="ar">الفئة</th>
+        <th>NDVI</th></tr>
+    <tr><td lang="fr"><span class="pastille" style="background:#B03A2E"></span>Nu</td>
+        <td lang="ar"><span class="pastille" style="background:#B03A2E"></span>جرداء</td>
+        <td>&lt; 0,10</td></tr>
+    <tr><td lang="fr"><span class="pastille" style="background:#C4870A"></span>Faible</td>
+        <td lang="ar"><span class="pastille" style="background:#C4870A"></span>ضعيف</td>
+        <td>0,10 – 0,20</td></tr>
+    <tr><td lang="fr"><span class="pastille" style="background:#BF9B40"></span>Moyen</td>
+        <td lang="ar"><span class="pastille" style="background:#BF9B40"></span>متوسط</td>
+        <td>0,20 – 0,35</td></tr>
+    <tr><td lang="fr"><span class="pastille" style="background:#7BB874"></span>Bon</td>
+        <td lang="ar"><span class="pastille" style="background:#7BB874"></span>جيد</td>
+        <td>0,35 – 0,50</td></tr>
+    <tr><td lang="fr"><span class="pastille" style="background:#4A7C45"></span>Excellent</td>
+        <td lang="ar"><span class="pastille" style="background:#4A7C45"></span>ممتاز</td>
+        <td>≥ 0,50</td></tr>
+  </table></div>
+  <p lang="fr" style="font-size:13.5px;color:var(--encre-douce)">Seuils
+  sahéliens usuels ; la « part dégradée » d'une unité est la part de son
+  couvert valide en classes Nu + Faible.</p>
+  <p lang="ar" dir="rtl" style="font-size:13.5px;color:var(--encre-douce)">عتبات
+  ساحلية متعارف عليها؛ «النسبة المتدهورة» لوحدة ما هي نسبة غطائها الصالح في
+  فئتي جرداء + ضعيف.</p>
+
+  <h3 lang="fr">4 · Règles d'alerte</h3>
+  <h3 lang="ar" dir="rtl">4 · قواعد التنبيه</h3>
+  <div class="table-defilante"><table>
+    <tr><th lang="fr">Niveau</th><th lang="ar">المستوى</th>
+        <th lang="fr">Règle (code public)</th><th lang="ar">القاعدة (شيفرة علنية)</th></tr>
+    <tr><td lang="fr"><span class="pastille" style="background:#B03A2E"></span>Critique</td>
+        <td lang="ar"><span class="pastille" style="background:#B03A2E"></span>حرجة</td>
+        <td lang="fr">≥ 60 % du couvert dégradé (nu + faible)</td>
+        <td lang="ar">≥ 60% من الغطاء متدهور (جرداء + ضعيف)</td></tr>
+    <tr><td lang="fr"><span class="pastille" style="background:#C4870A"></span>Vigilance</td>
+        <td lang="ar"><span class="pastille" style="background:#C4870A"></span>تنبه</td>
+        <td lang="fr">≥ 40 % dégradé avec pluie utile annoncée (regain possible) ;
+            ou saison ≥ 20 % plus sèche que la normale avec ≥ 30 % dégradé</td>
+        <td lang="ar">≥ 40% متدهور مع أمطار مفيدة متوقعة (احتمال تجدد العشب)؛
+            أو موسم أجف من المعتاد بـ ≥ 20% مع ≥ 30% متدهور</td></tr>
+    <tr><td lang="fr"><span class="pastille" style="background:#4A7C45"></span>Favorable</td>
+        <td lang="ar"><span class="pastille" style="background:#4A7C45"></span>مواتية</td>
+        <td lang="fr">sinon</td><td lang="ar">فيما عدا ذلك</td></tr>
+    <tr><td lang="fr"><span class="pastille" style="background:#CDBB9A"></span>Hors zone</td>
+        <td lang="ar"><span class="pastille" style="background:#CDBB9A"></span>خارج النطاق</td>
+        <td lang="fr">&lt; 5 % de parcours (désert permanent) — jamais en alerte</td>
+        <td lang="ar">&lt; 5% مراعٍ (صحراء دائمة) — لا تنبيه أبدًا</td></tr>
+  </table></div>
+  <p lang="fr">La liste d'alertes diffusée exclut en outre les unités urbaines
+  de Nouakchott (leur végétation n'est pas un parcours) — leurs fiches restent
+  consultables. Une « pluie utile » est un jour à <b>≥ 5 mm</b>.</p>
+  <p lang="ar" dir="rtl">تستبعد قائمة التنبيهات المنشورة كذلك الوحدات الحضرية
+  لنواكشوط (غطاؤها النباتي ليس مرعى) — مع بقاء صفحاتها متاحة. «المطر المفيد»
+  هو يوم بـ <b>≥ 5 مم</b>.</p>
+
+  <h3 lang="fr">5 · L'eau</h3>
+  <h3 lang="ar" dir="rtl">5 · المياه</h3>
+  <div lang="fr">
+    <ul>
+      <li><b>Points d'eau</b> : 4 465 puits, forages, sources et mares
+      recensés dans OpenStreetMap. Leur état de fonctionnement est
+      <b>tri-état</b> : fonctionnel / hors service / <i>non vérifié</i> — la
+      majorité est non vérifiée et affichée comme telle, jamais supposée
+      fonctionnelle.</li>
+      <li><b>Mares en eau (radar)</b> : Copernicus <b>Sentinel-1</b> (radar,
+      insensible aux nuages), rétrodiffusion VV maximale sur <b>12 jours</b>
+      à ~35 m/pixel ; une surface est « en eau » sous <b>−17 dB</b>. Résultat
+      croisé avec la climatologie JRC Global Surface Water.</li>
+      <li><b>Saisonnalité</b> : nombre de mois d'eau par an issu du JRC
+      (archive satellite 1984-2021).</li>
+    </ul>
+  </div>
+  <div lang="ar" dir="rtl">
+    <ul>
+      <li><b>نقاط الماء</b>: 4 465 بئرًا وثقبًا وعينًا وبحيرة محصاة في
+      OpenStreetMap. حالة اشتغالها <b>ثلاثية</b>: يعمل / معطل /
+      <i>غير متحقق منه</i> — الأغلبية غير متحقق منها وتُعرض كذلك، ولا تُفترض
+      عاملة أبدًا.</li>
+      <li><b>بحيرات بها ماء (رادار)</b>: كوبرنيكوس <b>سنتينل-1</b> (رادار لا
+      تحجبه الغيوم)، أقصى ارتداد VV خلال <b>12 يومًا</b> بدقة ~35 م/بكسل؛
+      يُعد السطح «به ماء» تحت <b>−17 ديسيبل</b>. تُقاطَع النتيجة مع مناخية
+      JRC للمياه السطحية.</li>
+      <li><b>الموسمية</b>: عدد أشهر الماء سنويًا من أرشيف JRC الفضائي
+      (1984-2021).</li>
+    </ul>
+  </div>
+
+  <h3 lang="fr">6 · Les pluies</h3>
+  <h3 lang="ar" dir="rtl">6 · الأمطار</h3>
+  <div class="table-defilante"><table>
+    <tr><th lang="fr">Produit</th><th lang="ar">المنتج</th>
+        <th lang="fr">Source · méthode</th><th lang="ar">المصدر · الطريقة</th>
+        <th lang="fr">Latence</th><th lang="ar">التأخير</th></tr>
+    <tr><td lang="fr">Observée (7 j / décade)</td><td lang="ar">مرصودة (7 أيام / عشرة أيام)</td>
+        <td lang="fr">NASA GPM IMERG Late V07 quotidien (~10 km), cumuls sur
+            7 j (app) et 10 j (bulletin), échantillonnés au centre de chaque
+            moughataa</td>
+        <td lang="ar">NASA GPM IMERG Late V07 يومي (~10 كلم)، تراكم 7 أيام
+            (التطبيق) و10 أيام (النشرة)، عند مركز كل مقاطعة</td>
+        <td lang="fr">~2 jours</td><td lang="ar">~يومان</td></tr>
+    <tr><td lang="fr">Dernières heures</td><td lang="ar">الساعات الأخيرة</td>
+        <td lang="fr">GPM IMERG Early ½-horaire : cumul des ~6 dernières
+            heures observées, seuil 1 mm, rafraîchi chaque heure</td>
+        <td lang="ar">GPM IMERG Early نصف ساعي: تراكم آخر ~6 ساعات مرصودة،
+            عتبة 1 مم، يُحدَّث كل ساعة</td>
+        <td lang="fr">~4-6 h (affichée)</td><td lang="ar">~4-6 ساعات (معروضة)</td></tr>
+    <tr><td lang="fr">Prévue (16 j)</td><td lang="ar">متوقعة (16 يومًا)</td>
+        <td lang="fr">Open-Meteo (modèle ECMWF) : cumul 16 j, détail
+            quotidien, première pluie utile (≥ 5 mm/j), écart à la normale
+            saisonnière</td>
+        <td lang="ar">Open-Meteo (نموذج ECMWF): تراكم 16 يومًا، تفصيل يومي،
+            أول مطر مفيد (≥ 5 مم/يوم)، الفارق عن المعدل الموسمي</td>
+        <td lang="fr">prévision</td><td lang="ar">توقع</td></tr>
+  </table></div>
+
+  <h3 lang="fr">7 · Le cheptel</h3>
+  <h3 lang="ar" dir="rtl">7 · الثروة الحيوانية</h3>
+  <p lang="fr">Effectifs officiels du <b>Recensement Général de l'Élevage
+  (RGE) 2024</b> par moughataa — bovins, camelins, ovins, caprins
+  <i>présents</i> lors du dénombrement (juillet-août 2024). Les totaux
+  nationaux extraits sont verrouillés par des tests automatiques contre les
+  chiffres publiés du rapport.</p>
+  <p lang="ar" dir="rtl">أعداد رسمية من <b>التعداد العام للثروة الحيوانية
+  2024</b> لكل مقاطعة — الأبقار والإبل والأغنام والماعز <i>الحاضرة</i> وقت
+  الإحصاء (يوليو-أغسطس 2024). المجاميع الوطنية المستخرجة مقفلة باختبارات آلية
+  مقابل الأرقام المنشورة في التقرير.</p>
+
+  <h3 lang="fr">8 · Limites assumées</h3>
+  <h3 lang="ar" dir="rtl">8 · حدود معلنة</h3>
+  <div class="honnete">
+    <div lang="fr"><ul style="margin:0">
+      <li>Les pluies et l'eau radar sont des <b>estimations satellitaires</b>,
+      pas des mesures au sol ; la pluie est échantillonnée au centre de la
+      moughataa (~10 km de maille) et peut manquer un orage isolé.</li>
+      <li>Le NDVI dépend des fenêtres sans nuage : en pleine saison des
+      pluies, la mosaïque 12 j peut vieillir localement.</li>
+      <li>La fiabilité des prévisions décroît après ~7 jours (mention affichée
+      dans l'app).</li>
+      <li>L'état de la plupart des points d'eau n'est <b>pas vérifié</b> sur
+      le terrain — l'app le dit explicitement.</li>
+      <li>Le cheptel RGE reflète la présence de juillet-août 2024, pas la
+      transhumance en cours.</li>
+    </ul></div>
+    <div lang="ar" dir="rtl"><ul style="margin:0">
+      <li>الأمطار وماء الرادار <b>تقديرات فضائية</b> لا قياسات ميدانية؛
+      يُؤخذ المطر عند مركز المقاطعة (شبكة ~10 كلم) وقد يفوت زخة معزولة.</li>
+      <li>يعتمد NDVI على نوافذ بلا غيوم: في عز الخريف قد تتقادم الفسيفساء
+      محليًا.</li>
+      <li>موثوقية التوقعات تتراجع بعد ~7 أيام (مذكور في التطبيق).</li>
+      <li>حالة أغلب نقاط الماء <b>غير متحقق منها</b> ميدانيًا — والتطبيق
+      يصرّح بذلك.</li>
+      <li>أعداد التعداد تعكس حضور يوليو-أغسطس 2024، لا الترحال الجاري.</li>
+    </ul></div>
+  </div>
+
+  <h3 lang="fr">9 · Reproduire ces résultats</h3>
+  <h3 lang="ar" dir="rtl">9 · إعادة إنتاج النتائج</h3>
+  <p lang="fr">Copier le <a href="https://github.com/Sidatt-Ally/maraa">dépôt</a>,
+  créer des comptes gratuits Copernicus Data Space et NASA Earthdata, renseigner
+  leurs jetons en secrets — les workflows font le reste, y compris la
+  compilation de l'application. L'historique complet des données produites est
+  conservé dans le dépôt : tout chiffre passé est rejouable.</p>
+  <p lang="ar" dir="rtl">انسخ <a href="https://github.com/Sidatt-Ally/maraa">المستودع</a>،
+  أنشئ حسابين مجانيين لدى Copernicus Data Space وNASA Earthdata، وضع رمزيهما في
+  الأسرار — وتتكفل الأتمتة بالباقي، بما في ذلك بناء التطبيق. السجل الكامل
+  للبيانات المنتَجة محفوظ في المستودع: كل رقم سابق قابل لإعادة التشغيل.</p>
+
+  <footer>
+    <p lang="fr" style="font-style:italic">Citation : Màraa (2026).
+    Méthodologie du suivi pastoral décadaire, Mauritanie.</p>
+    <p lang="ar" dir="rtl" style="font-style:italic">الاستشهاد: مرعى (2026).
+    منهجية المتابعة الرعوية العشرية، موريتانيا.</p>
+    <p>
+      <span lang="fr"><a href="./">Accueil</a> ·
+        <a href="bulletins/">Bulletins</a> ·
+        <a href="https://github.com/Sidatt-Ally/maraa">Code source</a></span>
+      <span lang="ar"><a href="./">الرئيسية</a> ·
+        <a href="bulletins/">النشرات</a> ·
+        <a href="https://github.com/Sidatt-Ally/maraa">الشيفرة المصدرية</a></span>
+    </p>
+  </footer>
+</main>
+
+<script>
+function basculer(l){
+  document.documentElement.setAttribute('data-lang', l);
+  document.documentElement.lang = l;
+  document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+  document.getElementById('btn-fr').classList.toggle('actif', l === 'fr');
+  document.getElementById('btn-ar').classList.toggle('actif', l === 'ar');
+  try { localStorage.setItem('maraa-langue', l); } catch(e) {}
+}
+basculer(
+  (function(){
+    try { var m = localStorage.getItem('maraa-langue'); if (m) return m; } catch(e) {}
+    return (navigator.language || '').toLowerCase().startsWith('ar') ? 'ar' : 'fr';
+  })()
+);
+</script>
+</body>
+</html>
