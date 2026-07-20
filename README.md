@@ -1,8 +1,8 @@
-# Màraa · مرعى — Observatoire numérique des parcours de Mauritanie
+# Maraa · مرعى — Observatoire numérique des pâturages et des ressources pastorales de Mauritanie
 
-*المرصد الرقمي للمراعي في موريتانيا — données pastorales ouvertes*
+*المرصد الرقمي للمراعي والموارد الرعوية في موريتانيا — données pastorales ouvertes*
 
-Ce dépôt publie les **produits** du système Màraa :
+Ce dépôt publie les **produits** du système Maraa :
 
 - **`data/`** — les données décadaires consommées par l'application
   (état des pâturages par moughataa/commune, pluies observées et prévues,
@@ -18,4 +18,4 @@ propriétaire ; un accès d'audit peut être accordé aux institutions dans un
 cadre conventionnel — contact via les
 [issues](https://github.com/Sidatt-Ally/maraa/issues).
 
-Citation : **Màraa (2026)**. Bulletin pastoral décadaire, Mauritanie.
+Citation : **Maraa (2026)**. Bulletin pastoral décadaire, Mauritanie.
