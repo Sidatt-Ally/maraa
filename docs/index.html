@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Màraa · مرعى — Suivi ouvert des parcours pastoraux, Mauritanie</title>
-<meta name="description" content="Màraa : application mobile anonyme et bulletin décadaire bilingue FR/AR de suivi des pâturages, de l'eau et des pluies en Mauritanie — données satellitaires ouvertes, pipeline public, zéro serveur.">
+<title>Màraa · مرعى — Observatoire numérique des parcours de Mauritanie</title>
+<meta name="description" content="Màraa, observatoire numérique des parcours de Mauritanie : état des pâturages, eau et pluies par satellite, application mobile anonyme FR/AR et bulletin décadaire public. Données ouvertes, zéro serveur.">
 <link rel="icon" href="icone.png">
 <style>
   :root{
@@ -15,29 +15,41 @@
   body{margin:0;background:var(--creme);color:var(--encre);
        font:16px/1.65 Georgia,'Noto Naskh Arabic',serif}
   html[dir=rtl] body{font-family:'Noto Naskh Arabic','Amiri',Georgia,serif}
-  /* bascule de langue : on ne montre que la langue active */
   html[data-lang=fr] [lang=ar]{display:none!important}
   html[data-lang=ar] [lang=fr]{display:none!important}
 
+  /* ─── bande de marque + navigation (commune aux pages du site) ─── */
   .bande{background:var(--sable);border-bottom:1px solid #C9B078}
-  .bande-int{max-width:880px;margin:0 auto;padding:14px 20px;
-             display:flex;align-items:center;gap:14px}
-  .bande img{width:52px;height:52px;border-radius:14px;flex:none}
-  .bande h1{font-size:26px;margin:0;color:var(--teal);letter-spacing:.3px}
-  .bande .sous-titre{font-size:13.5px;color:#54462A;margin:2px 0 0}
+  .bande-int{max-width:880px;margin:0 auto;padding:16px 20px 10px;
+             display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .bande img{width:56px;height:56px;border-radius:15px;flex:none}
+  .bande h1{font-size:27px;margin:0;color:var(--teal);letter-spacing:.3px;
+            line-height:1.1}
+  .descripteur{font-size:13.5px;color:#54462A;margin:3px 0 0;font-style:italic}
   .langue{margin-inline-start:auto;flex:none}
   .langue button{font:600 13px Georgia,serif;padding:7px 14px;cursor:pointer;
     border:1px solid var(--teal);background:transparent;color:var(--teal);
     border-radius:999px}
   .langue button.actif{background:var(--teal);color:#fff}
   .langue button+button{margin-inline-start:6px}
+  nav{max-width:880px;margin:0 auto;padding:0 20px 12px;display:flex;
+      gap:18px;flex-wrap:wrap;font-size:13.5px}
+  nav a{color:#54462A;text-decoration:none;font-weight:600;padding:2px 0}
+  nav a.actif{color:var(--teal);border-bottom:2px solid var(--teal)}
+  nav a:hover{color:var(--teal)}
 
   main{max-width:880px;margin:0 auto;padding:8px 20px 48px}
-  .heros{padding:30px 0 6px}
+  .heros{padding:28px 0 6px}
   .heros h2{font-size:30px;line-height:1.25;margin:0 0 10px;color:var(--teal);
             text-wrap:balance}
   .heros p{font-size:17px;max-width:640px;margin:0 0 6px}
   .heros .note{font-size:13.5px;color:var(--encre-douce)}
+
+  /* état vivant : lu depuis les vraies données du jour */
+  #vivant{display:none;margin:16px 0 0;padding:10px 16px;background:#fff;
+    border:1px solid var(--filet);border-inline-start:4px solid var(--teal);
+    border-radius:12px;font-size:14px}
+  #vivant b{color:var(--teal);font-variant-numeric:tabular-nums}
 
   .chiffres{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
   .chiffre{background:var(--sable-pale);border:1px solid var(--filet);
@@ -77,43 +89,68 @@
          font-size:13px;color:var(--encre-douce)}
   footer .citation{font-style:italic}
   a{color:var(--teal-2)}
-  @media (max-width:560px){.heros h2{font-size:24px}.bande h1{font-size:22px}}
+  @media (max-width:560px){.heros h2{font-size:24px}.bande h1{font-size:23px}}
 </style>
 </head>
 <body>
 
-<div class="bande"><div class="bande-int">
-  <img src="icone.png" alt="Màraa">
-  <div>
-    <h1>Màraa · مرعى</h1>
-    <p class="sous-titre" lang="fr">Suivi ouvert des parcours pastoraux — Mauritanie</p>
-    <p class="sous-titre" lang="ar">متابعة مفتوحة للمراعي — موريتانيا</p>
+<div class="bande">
+  <div class="bande-int">
+    <img src="icone.png" alt="Màraa">
+    <div>
+      <h1>Màraa · مرعى</h1>
+      <p class="descripteur" lang="fr">Observatoire numérique des parcours de Mauritanie</p>
+      <p class="descripteur" lang="ar">المرصد الرقمي للمراعي في موريتانيا</p>
+    </div>
+    <div class="langue">
+      <button id="btn-fr" onclick="basculer('fr')">FR</button>
+      <button id="btn-ar" onclick="basculer('ar')">العربية</button>
+    </div>
   </div>
-  <div class="langue">
-    <button id="btn-fr" onclick="basculer('fr')">FR</button>
-    <button id="btn-ar" onclick="basculer('ar')">العربية</button>
-  </div>
-</div></div>
+  <nav>
+    <span lang="fr">
+      <a class="actif" href="./">Accueil</a>
+    </span><span lang="fr"><a href="bulletins/">Bulletins</a>
+    </span><span lang="fr"><a href="methodologie.html">Méthodologie</a>
+    </span><span lang="fr"><a href="telecharger.html">Télécharger l'app</a>
+    </span><span lang="fr"><a href="privacy.html">Confidentialité</a></span>
+    <span lang="ar"><a class="actif" href="./">الرئيسية</a>
+    </span><span lang="ar"><a href="bulletins/">النشرات</a>
+    </span><span lang="ar"><a href="methodologie.html">المنهجية</a>
+    </span><span lang="ar"><a href="telecharger.html">تحميل التطبيق</a>
+    </span><span lang="ar"><a href="privacy.html">الخصوصية</a></span>
+  </nav>
+</div>
 
 <main>
   <section class="heros">
     <div lang="fr">
       <h2>Où est l'herbe, où est l'eau, où va la pluie&nbsp;?</h2>
-      <p>Màraa réunit chaque décade les données satellitaires et météorologiques
-      ouvertes sur les pâturages, l'eau de surface et les pluies des
-      63&nbsp;moughataa de Mauritanie — et les restitue en français et en arabe,
-      dans une application qui fonctionne hors-ligne et un bulletin public.</p>
-      <p class="note">Projet ouvert, anonyme et sans serveur : aucune inscription,
-      aucune donnée personnelle collectée, tout le traitement est public et
-      reproductible.</p>
+      <p>L'observatoire réunit chaque décade les données satellitaires et
+      météorologiques ouvertes sur les pâturages, l'eau de surface et les pluies
+      des 63&nbsp;moughataa de Mauritanie — et les restitue en français et en
+      arabe, dans une application qui fonctionne hors-ligne et un bulletin
+      public.</p>
+      <p class="note">Système autonome et anonyme, sans serveur : aucune
+      inscription, aucune donnée personnelle collectée, publication
+      entièrement automatique.</p>
     </div>
     <div lang="ar" dir="rtl">
       <h2>أين العشب، أين الماء، وأين يتجه المطر؟</h2>
-      <p>يجمع «مرعى» كل عشرة أيام البيانات الفضائية والمناخية المفتوحة عن المراعي
+      <p>يجمع المرصد كل عشرة أيام البيانات الفضائية والمناخية المفتوحة عن المراعي
       والمياه السطحية والأمطار في 63 مقاطعة موريتانية — ويقدمها بالعربية والفرنسية
       في تطبيق يعمل دون إنترنت ونشرة عمومية.</p>
-      <p class="note">مشروع مفتوح ومجهول وبلا خادم: لا تسجيل، لا جمع لأي بيانات
-      شخصية، وكل المعالجة علنية وقابلة لإعادة الإنتاج.</p>
+      <p class="note">نظام مستقل ومجهول وبلا خادم: لا تسجيل، لا جمع لأي بيانات
+      شخصية، والنشر آلي بالكامل.</p>
+    </div>
+
+    <div id="vivant">
+      <span lang="fr">📡 Données du <b id="v-date-fr">—</b> ·
+        <b id="v-alertes-fr">—</b> zones en alerte pastorale ·
+        mise à jour automatique tous les 10 jours</span>
+      <span lang="ar">📡 بيانات <b id="v-date-ar">—</b> ·
+        <b id="v-alertes-ar">—</b> منطقة في حالة تنبيه رعوي ·
+        تحديث آلي كل 10 أيام</span>
     </div>
 
     <div class="chiffres">
@@ -137,8 +174,8 @@
       <p lang="ar" dir="rtl">حالة المراعي، نقاط الماء، الأمطار المرصودة والمتوقعة،
       التصنيفات ومسارات الترحال. ثنائي اللغة، يعمل دون إنترنت، مجهول.
       نسخة تجريبية لأندرويد.</p>
-      <a class="bouton" href="https://github.com/Sidatt-Ally/maraa/releases/download/apk/app-release.apk">
-        <span lang="fr">Télécharger l'APK</span><span lang="ar">تحميل التطبيق APK</span></a>
+      <a class="bouton" href="telecharger.html">
+        <span lang="fr">Télécharger (QR ou lien direct)</span><span lang="ar">التحميل (QR أو رابط مباشر)</span></a>
     </div>
     <div class="carte">
       <div class="pictogramme">📰</div>
@@ -207,14 +244,8 @@
     <p lang="ar" dir="rtl" class="citation">الاستشهاد: مرعى (2026). النشرة الرعوية
     العشرية، موريتانيا. — أُعدّت من البيانات الفضائية والمناخية التي جمعها «مرعى».</p>
     <p>
-      <span lang="fr"><a href="bulletins/">Bulletins</a> ·
-        <a href="methodologie.html">Méthodologie</a> ·
-        <a href="privacy.html">Confidentialité</a> ·
-        <a href="https://github.com/Sidatt-Ally/maraa/issues">Contact (GitHub)</a></span>
-      <span lang="ar"><a href="bulletins/">النشرات</a> ·
-        <a href="methodologie.html">المنهجية</a> ·
-        <a href="privacy.html">الخصوصية</a> ·
-        <a href="https://github.com/Sidatt-Ally/maraa/issues">تواصل (GitHub)</a></span>
+      <span lang="fr"><a href="https://github.com/Sidatt-Ally/maraa/issues">Contact (GitHub)</a></span>
+      <span lang="ar"><a href="https://github.com/Sidatt-Ally/maraa/issues">تواصل (GitHub)</a></span>
     </p>
   </footer>
 </main>
@@ -234,6 +265,24 @@ basculer(
     return (navigator.language || '').toLowerCase().startsWith('ar') ? 'ar' : 'fr';
   })()
 );
+
+// Bandeau vivant : lit l'état réel publié (échec réseau = bandeau absent, rien
+// de cassé). Les chiffres affichés sont EXACTEMENT ceux que voit l'application.
+fetch('https://raw.githubusercontent.com/Sidatt-Ally/maraa/main/data/maraa-etat.json')
+  .then(function(r){ return r.json(); })
+  .then(function(d){
+    var date = (d.meta && d.meta.genere_le || '').slice(0, 10);
+    var alertes = 0;
+    (d.moughataa || []).forEach(function(m){ if (m.al) alertes++; });
+    if (!date) return;
+    var j = date.split('-');
+    document.getElementById('v-date-fr').textContent = j[2] + '/' + j[1] + '/' + j[0];
+    document.getElementById('v-date-ar').textContent = j[2] + '/' + j[1] + '/' + j[0];
+    document.getElementById('v-alertes-fr').textContent = alertes;
+    document.getElementById('v-alertes-ar').textContent = alertes;
+    document.getElementById('vivant').style.display = 'block';
+  })
+  .catch(function(){});
 </script>
 </body>
 </html>
